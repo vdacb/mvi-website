@@ -1,0 +1,43 @@
+#landing-container {
+    width: 78vw;
+    margin: 0 auto;
+}
+
+#landing-container .vertical-banner {
+    width: 23rem;
+    height: 100vh;
+    background-color: #dadada;
+}
+
+#landing-container .content-container {
+    position: absolute;
+    top: 0;
+    margin-top: 5rem;
+    margin-left: 12rem;
+}
+
+#landing-container #title {
+    font-family: "Texta";
+    font-size: 4rem;
+    font-weight: bolder;
+    width: 30rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    position: relative;
+    color: #171717;
+}
+
+#landing-container .text {
+    margin-top: 4rem;
+    margin-left: 14rem;
+    width: 17rem;
+}
+
+#landing-container .arrow-flat-down {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 7rem;
+}
