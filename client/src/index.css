@@ -1,3 +1,87 @@
+@font-face {
+	font-family: "Texta";
+	src: url("./font/texta/Texta-Regular.otf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Texta";
+	src: url("./font/texta/Texta-Book.otf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Texta";
+	src: url("./font/texta/Texta-Medium.otf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Texta";
+	src: url("./font/texta/Texta-Bold.otf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Texta";
+	src: url("./font/texta/Texta-Heavy.otf");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Texta";
+	src: url("./font/texta/Texta-Black.otf");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Texta Alt";
+	src: url("./font/texta_alt/TextaAlt-Regular.otf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Texta Alt";
+	src: url("./font/texta_alt/TextaAlt-Book.otf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Texta Alt";
+	src: url("./font/texta_alt/TextaAlt-Medium.otf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Texta Alt";
+	src: url("./font/texta_alt/TextaAlt-Bold.otf");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Texta Alt";
+	src: url("./font/texta_alt/TextaAlt-Heavy.otf");
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Texta Alt";
+	src: url("./font/texta_alt/TextaAlt-Black.otf");
+	font-weight: 400;
+	font-style: italic;
+}
+
 body {
 	margin: 0;
 	padding: 0;
