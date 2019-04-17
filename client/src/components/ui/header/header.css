@@ -10,3 +10,21 @@ header {
     left: 0;
     right: 0;
 }
+
+header #language-select {
+    display: flex;
+    align-items: center;
+}
+
+header #language-select > .text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header #language-select > .deco-line {
+    height: 1px;
+    width: 2.5rem;
+    background-color: #171717;
+    margin: 0 0.7rem;
+}

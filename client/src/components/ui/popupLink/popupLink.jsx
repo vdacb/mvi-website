@@ -3,7 +3,7 @@ import "./popupLink.css";
 
 const PopupLink = (props) => (
     <div className="popup-link">
-        <span className="deco-line"></span>
+        <div className="deco-line"></div>
         <label className="text small-text">{props.text}</label>
     </div>
 );

@@ -12,25 +12,30 @@
 #landing-container .content-container {
     position: absolute;
     top: 0;
-    margin-top: 5rem;
-    margin-left: 12rem;
+    margin-top: 20vh;
+    margin-left: 19rem;
 }
 
 #landing-container #title {
     font-family: "Texta";
     font-size: 4rem;
-    font-weight: bolder;
+    font-weight: 700;
     width: 30rem;
     text-transform: uppercase;
     line-height: 4rem;
-    position: relative;
     color: #171717;
 }
 
-#landing-container .text {
+#landing-container .content-container .text {
     margin-top: 4rem;
-    margin-left: 14rem;
+    margin-left: 6rem;
     width: 17rem;
+}
+
+#landing-container .link-container {
+    position: absolute;
+    right: 13rem;
+    top: 63vh;
 }
 
 #landing-container .arrow-flat-down {
