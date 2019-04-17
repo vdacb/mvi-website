@@ -1,0 +1,25 @@
+#see-more-btn {
+    background-color: #9590D7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 4rem;
+    position: absolute;
+    left: -11rem;
+    margin-top: 8rem;
+    cursor: pointer;
+}
+
+#see-more-btn > .text {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#see-more-btn > #arrow-right {
+    width: 0.6rem;
+    margin-left: 1rem;
+}

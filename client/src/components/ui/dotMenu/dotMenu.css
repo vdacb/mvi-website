@@ -1,0 +1,35 @@
+#dot-menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#dot-menu {
+    height: 80vh;
+    width: 3px;
+    margin-top: 4rem;
+    list-style: none;
+    background-color: #9590D7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dot-menu > li {
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#dot-menu .dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #9590D7;
+}

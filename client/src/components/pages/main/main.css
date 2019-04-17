@@ -1,0 +1,38 @@
+#main-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main-container > * {
+    display: inline-block;
+}
+
+#main-container > #nav-container {
+    height: 100vh;
+    width: 9.5rem;
+    z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+#main-container #main-img {
+    background-color: #dadada;
+    height: 100vh;
+    width: 65vw;
+}
+
+#main-container #info-container {
+    width: 35vw;
+    height: 80vh;
+    position: absolute;
+    padding: 20vh 3rem 0 3rem;
+}
+
+#main-container #info-container > .title {
+    font-weight: 700;
+}
+
+#main-container #info-container > .text {
+    width: 20rem;
+}
