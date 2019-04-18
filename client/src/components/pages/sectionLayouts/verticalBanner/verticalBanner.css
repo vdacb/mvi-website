@@ -1,0 +1,28 @@
+#vb-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#vb-container #content-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vb-container #content-container .text {
+    margin: 2rem 0;
+    width: 60%;
+}
+
+#vb-container #img-container {
+    height: 100vh;
+    overflow: hidden;
+    width: 30rem;
+}
+
+#vb-container #img-container img {
+    height: 100%;
+}
