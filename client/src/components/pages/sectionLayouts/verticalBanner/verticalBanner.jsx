@@ -7,8 +7,8 @@ class VerticalBanner extends Component {
         return(
             <div id="vb-container">
                 <div id="content-container">
-                    <p className="text">{this.props.text[0]}</p>
-                    <p className="text">{this.props.text[1]}</p>
+                    <p className="text" dangerouslySetInnerHTML={{__html: this.props.text[0]}}></p>
+                    <p className="text" dangerouslySetInnerHTML={{__html: this.props.text[1]}}></p>
                 </div>
 
                 <div id="img-container">

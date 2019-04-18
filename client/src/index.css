@@ -117,3 +117,9 @@ code {
 	color: #171717;
 	margin-bottom: 1rem;
 }
+
+p > a {
+	font-weight: 900;
+	color: #9590D7;
+	cursor: pointer;
+}
