@@ -105,7 +105,7 @@ code {
 }
 
 .text {
-    font-size: 1.2rem;
+    font-size: 1rem;
 	font-family: "Texta";
 	color: #171717;
 }
@@ -118,7 +118,7 @@ code {
 	margin-bottom: 1rem;
 }
 
-p > a {
+.text > a {
 	font-weight: 900;
 	color: #9590D7;
 	cursor: pointer;

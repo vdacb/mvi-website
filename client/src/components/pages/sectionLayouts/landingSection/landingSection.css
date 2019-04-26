@@ -1,4 +1,4 @@
-#landing-container {
+#landing-section-container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -6,28 +6,28 @@
     align-items: center;
 }
 
-#landing-content {
+#landing-section-content {
     width: 80vw;
     height: 60vh;
     display: flex;
     position: relative;
 }
 
-#landing-content > #image-container {
+#landing-section-content > #image-container {
     width: 49%;
     overflow: hidden;
 }
 
-#landing-content > #image-container img {
+#landing-section-content > #image-container img {
     height: 100%;
 }
 
-#landing-content > #landing-info {
+#landing-section-content > #landing-info {
     width: 50%;
     position: relative;
 }
 
-#landing-content > #landing-info > .title {
+#landing-section-content > #landing-info > .title {
     font-size: 4rem;
     font-weight: 800;
     position: absolute;
@@ -36,13 +36,13 @@
     text-shadow: 0 0 0.5rem #ffffff;
 }
 
-#landing-content > #landing-info > .text {
+#landing-section-content > #landing-info > .text {
     width: 80%;
     margin-top: 10rem;
     margin-left: 2rem;
 }
 
-#landing-content #scroll-line {
+#landing-section-content #scroll-line {
     width: 1px;
     height: 3.4rem;
     background-color: #171717;

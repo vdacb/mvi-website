@@ -1,0 +1,55 @@
+#menu-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#menu-container a {
+    text-decoration: none;
+}
+
+#menu-container #home-link {
+    width: 14rem;
+    margin: 1.7rem auto;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.9rem;
+    cursor: pointer;
+}
+
+#menu-container #menu {
+    width: 100vw;
+    margin-top: 18vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+#menu-container #menu .menu-item {
+    margin: 0 1rem;
+    font-size: 4.6rem;
+    font-family: "Texta";
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-container #menu .menu-item a {
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #171717;
+}
+
+#menu-container .link-container {
+    position: absolute;
+    bottom: 7vh;
+    margin-left: 4rem;
+}

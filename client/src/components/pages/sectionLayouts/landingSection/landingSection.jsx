@@ -4,8 +4,8 @@ import "./landingSection.css";
 class LandingSection extends Component {
     render() {
         return(
-            <div id="landing-container">
-                <div id="landing-content">
+            <div id="landing-section-container">
+                <div id="landing-section-content">
                     <div id="image-container">
                         <img src={window.location.origin + "/img/alfabetos.jpg"} />
                     </div>

@@ -10,8 +10,17 @@ class MenuIcon extends Component {
     }
 
     render() {
+        var displayedImage;
+
+        if(this.props.menuVisible) {
+            displayedImage = "black_cross.png";
+        }
+        else {
+            displayedImage = "menu_icon.png";
+        }
+
         return(
-            <img id="menu-icon" src={window.location.origin + "/img/menu_icon.png"} />
+            <img id="menu-icon" src={window.location.origin + "/img/" + displayedImage} />
         );
     }
 }

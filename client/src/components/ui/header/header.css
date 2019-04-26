@@ -1,20 +1,27 @@
 header {
-    width: 93vw;
+    width: 100vw;
     height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     margin: 0 auto;
-    margin-top: 1rem;
+    padding-top: 1rem;
     left: 0;
     right: 0;
+    z-index: 10;
+}
+
+header #menu-icon-warp {
+    margin-left: 3rem;
     z-index: 10;
 }
 
 header #language-select {
     display: flex;
     align-items: center;
+    margin-right: 3rem;
+    z-index: 10;
 }
 
 header #language-select > .text {
