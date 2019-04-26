@@ -47,8 +47,8 @@ class Landing extends Component {
                     </div>
 
                     <div className="link-container">
-                        <PopupLink text="Sobre"/>
-                        <PopupLink text="Ficha técnica" />
+                        <PopupLink link="about" text="Sobre"/>
+                        <PopupLink link="ficha_tecnica" text="Ficha técnica" />
                     </div>
 
                     <img className="arrow-flat-down" src={window.location.origin + "/img/arrow_flat_down.png"} alt="Scroll down arrow" onClick={this.handleUserScroll} />

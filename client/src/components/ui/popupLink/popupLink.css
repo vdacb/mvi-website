@@ -4,8 +4,9 @@
     padding-bottom: 1rem;
 }
 
-.popup-link label {
+.popup-link a {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .popup-link .deco-line {

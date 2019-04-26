@@ -1,0 +1,46 @@
+#about-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-container #close-cross {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    right: 2.2rem;
+    top: 2.2rem;
+    user-select: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#about-container > .title {
+    font-weight: 700;
+    font-size: 5rem;
+    width: 30rem;
+    line-height: 4rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+
+#about-container #about-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 23rem;
+    margin-left: 3rem;
+    margin-top: 6rem;
+}
+
+#about-container #about-content p {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+#about-container #text-author {
+    margin-left: 3rem;
+    font-weight: 700;
+}
