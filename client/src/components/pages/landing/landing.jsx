@@ -39,7 +39,9 @@ class Landing extends Component {
                 {redirect}
                 <Header />
                 <div id="landing-container">
-                    <div className="vertical-banner"></div>
+                    <div className="vertical-banner">
+                        <img src={window.location.origin + "/img/alfabetos.jpg"} />
+                    </div>
                     
                     <div className="content-container">
                         <div id="title">Museu virtual da imprensa</div>

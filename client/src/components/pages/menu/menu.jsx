@@ -64,8 +64,8 @@ class Menu extends Component {
                 </ul>
 
                 <div className="link-container">
-                    <PopupLink text="Sobre"/>
-                    <PopupLink text="Ficha técnica" />
+                    <PopupLink link="about" text="Sobre"/>
+                    <PopupLink link="ficha_tecnica" text="Ficha técnica" />
                 </div>
             </div>
         );
