@@ -18,7 +18,7 @@ class ScrollBar extends Component {
     }
 
     handleScroll(ev) {
-        console.log(ev);
+        //console.log(ev);
     }
 
     render() {
