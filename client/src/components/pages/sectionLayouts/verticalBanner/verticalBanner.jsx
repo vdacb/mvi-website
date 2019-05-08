@@ -18,7 +18,11 @@ class VerticalBanner extends Component {
     }
 
     componentWillUnmount() {
-        //document.querySelectorAll(".popup").removeEventListener("click", this.openPopup);
+        const links = this.vbContainerRef.current.querySelectorAll("a.popup");
+
+        for(var i = 0; i < links.length; i++) {
+            links[i].removeEventListener("click", this.props.openPopup);
+        }
     }
 
     render() {

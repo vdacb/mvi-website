@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import "./dotMenu.css";
 
 class DotMenu extends Component {
-
     render() {
         return(
             <nav id="dot-menu-container">

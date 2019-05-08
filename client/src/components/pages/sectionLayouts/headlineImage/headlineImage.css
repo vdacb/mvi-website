@@ -1,0 +1,32 @@
+#headline-image-container {
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headline-image-container #headline {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+#headline-image-container #hi-content {
+    display: flex;
+}
+
+#headline-image-container #hi-content > div {
+    width: 50%;
+}
+
+#headline-image-container #hi-content > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#headline-image-container #hi-content .text {
+    width: 85%;
+}
+
+#headline-image-container #hi-content img {
+    width: 100%;
+}
