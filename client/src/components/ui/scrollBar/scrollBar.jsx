@@ -5,8 +5,9 @@ class ScrollBar extends Component {
 
     constructor() {
         super();
-        
+
         this.handleScroll = this.handleScroll.bind(this);
+        this.scrollBarRef = React.createRef();
     }
 
     componentDidMount() {
@@ -18,12 +19,16 @@ class ScrollBar extends Component {
     }
 
     handleScroll(ev) {
-        //console.log(ev);
+        var distScrolled = window.pageYOffset;
+        var docHeight = document.body.clientHeight - window.innerHeight;
+        console.log("SCROLL", window.pageYOffset);
+        console.log("HEIGHT", document.body.clientHeight-window.innerHeight);
+        this.scrollBarRef.current.style.height = ( (distScrolled / docHeight) * 100) + "%";
     }
 
     render() {
         return(
-            <div id="scrollbar"></div>
+            <div id="scrollbar" ref={this.scrollBarRef}></div>
         );
     }
 }
