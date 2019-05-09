@@ -1,0 +1,38 @@
+#image-center-container {
+    width: 75vw;
+    height: 58vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#image-center-container #main-content {
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#image-center-container #main-content p {
+    margin-bottom: 0rem;
+}
+
+#image-center-container #img-container {
+    width: 150%;
+    margin: 0 2rem;
+}
+
+#image-center-container #img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+#image-center-container #italic-container {
+    display: flex;
+    align-items: center;
+}
+
+#image-center-container #italic-container p {
+    font-style: italic;
+    font-family: "Texta Alt";
+}

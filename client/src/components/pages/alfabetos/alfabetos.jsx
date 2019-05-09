@@ -5,6 +5,7 @@ import ScrollUpBtn from "../../ui/scrollUpBtn/scrollUpBtn";
 import LandingSection from "../sectionLayouts/landingSection/landingSection";
 import VerticalBanner from "../sectionLayouts/verticalBanner/verticalBanner";
 import HeadlineImage from "./../sectionLayouts/headlineImage/headlineImage";
+import ImageOnCenter from "./../sectionLayouts/imageOnCenter/imageOnCenter";
 import SlidePopup from "./../../ui/slidePopup/slidePopup";
 import "./alfabetos.css";
 
@@ -52,6 +53,7 @@ class Alfabetos extends Component {
                 <VerticalBanner text={this.state.text.slice(1,3)} openPopup={this.openPopup} />
                 <VerticalBanner text={this.state.text.slice(3,5)} openPopup={this.openPopup} />
                 <HeadlineImage text={this.state.text.slice(5,8)} openPopup={this.openPopup} />
+                <ImageOnCenter text={this.state.text.slice(8,11)} openPopup={this.openPopup} />
             </div>
         );
     }
