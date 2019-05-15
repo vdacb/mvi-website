@@ -21,8 +21,7 @@ class ScrollBar extends Component {
     handleScroll(ev) {
         var distScrolled = window.pageYOffset;
         var docHeight = document.body.clientHeight - window.innerHeight;
-        console.log("SCROLL", window.pageYOffset);
-        console.log("HEIGHT", document.body.clientHeight-window.innerHeight);
+        
         this.scrollBarRef.current.style.height = ( (distScrolled / docHeight) * 100) + "%";
     }
 

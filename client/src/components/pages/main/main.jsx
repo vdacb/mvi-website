@@ -16,11 +16,13 @@ class Main extends Component {
                     link: "alfabetos",
                     title: "Alfabetos",
                     description: "A Escrita, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
+                    image: "/img/typography/alfabetos.jpg",
                 },
                 {
                     link: "equipamentos",
                     title: "Equipamentos",
-                    description: "Os Equipamentos, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações."
+                    description: "Os Equipamentos, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
+                    image: "/img/top_photos/prelolitografico.jpg",
                 },
                 {
                     link: "glossario",
@@ -77,7 +79,7 @@ class Main extends Component {
                     </div>
 
                     <div id="main-img-container">
-                        <img id="main-img" alt="Main image" src={window.location.origin + "/img/alfabetos.jpg"}/>
+                        <img id="main-img" alt="Main" src={window.location.origin + this.state.pages[this.state.selectedPage].image}/>
                     </div>
 
                     <div id="info-container">

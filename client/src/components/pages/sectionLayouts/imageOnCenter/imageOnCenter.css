@@ -7,14 +7,10 @@
 }
 
 #image-center-container #main-content {
-    width: 150%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-#image-center-container #main-content p {
-    margin-bottom: 0rem;
 }
 
 #image-center-container #img-container {

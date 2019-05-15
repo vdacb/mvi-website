@@ -7,6 +7,7 @@
 #headline-image-container #headline {
     font-size: 2rem;
     margin-bottom: 5rem;
+    width: 78%;
 }
 
 #headline-image-container #hi-content {
@@ -20,11 +21,11 @@
 #headline-image-container #hi-content > div:first-child {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #headline-image-container #hi-content .text {
     width: 85%;
+    margin-bottom: 3rem;
 }
 
 #headline-image-container #hi-content img {

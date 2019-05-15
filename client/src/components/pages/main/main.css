@@ -16,10 +16,15 @@
     background-color: #ffffff;
 }
 
-#main-container #main-img {
+#main-container #main-img-container {
     background-color: #dadada;
     height: 100vh;
     width: 65vw;
+    overflow: hidden;
+}
+
+#main-container #main-img-container #main-img {
+    height: 100%;
 }
 
 #main-container #info-container {

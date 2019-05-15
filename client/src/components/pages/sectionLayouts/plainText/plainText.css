@@ -1,0 +1,10 @@
+#plain-text-container {
+    width: 65vw;
+    margin: 0 auto;
+    margin-top: 20rem;
+}
+
+#plain-text-container .text {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}

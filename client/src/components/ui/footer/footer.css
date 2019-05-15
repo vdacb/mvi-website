@@ -1,0 +1,38 @@
+#footer {
+    width: 100vw;
+    height: 40vh;
+    background-color: #1C1C1C;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+}
+
+#footer > div {
+    position: relative;
+}
+
+#footer .text {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    margin-bottom: -2rem;
+    margin-left: 0.3rem;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 6rem;
+    padding: 0;
+}
+
+#footer img {
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
