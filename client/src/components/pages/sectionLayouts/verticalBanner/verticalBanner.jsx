@@ -34,7 +34,7 @@ class VerticalBanner extends Component {
                 </div>
 
                 <div id="img-container">
-                    <img src={window.location.origin + "/img/alfabetos.jpg"} alt="Vertical banner" />
+                    <img src={window.location.origin + this.props.image} alt="Vertical banner" />
                 </div>
             </div>
         );
