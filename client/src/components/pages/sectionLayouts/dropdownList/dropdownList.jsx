@@ -40,12 +40,16 @@ class DropdownList extends Component {
     }
 
     render() {
+        console.log("LIST", this.props.list);
         return(
             <div id="dropdown-list-container" ref={this.dropdownListRef}>
                 <div id="options-container">
-                    <div className="option title" onClick={this.handleOptionClick} >Alfabetos</div>
-                    <div className="option title selected" onClick={this.handleOptionClick} >Escritas</div>
-                    <div className="option title" onClick={this.handleOptionClick} >Vários</div>
+                    {
+                        this.props.list.map(option => (
+                            <div className="option title" onClick={this.handleOptionClick} >{option[0]}</div>
+                        ))
+                    }
+                    
                 </div>
 
                 <div id="items-container">

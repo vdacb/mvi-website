@@ -11,8 +11,7 @@ class SlidePopup extends Component {
                         <img src={window.location.origin + "/img/black_cross.png"} onClick={this.props.closePopup} alt="Closing cross" />
                     </div>
                     <div id="slide-popup-img-container">
-                        <img src={window.location.origin + "/img/" + this.props.image} alt="Chinese writting" />
-                        <img src={window.location.origin + "/img/" + this.props.image} alt="Chinese writting" />
+                        <img src={window.location.origin + (this.props.image || "/img/alfabetos.jpg")} alt="Chinese writting" />
                     </div>
                     <div className="title">{this.props.title}</div>
                     {
