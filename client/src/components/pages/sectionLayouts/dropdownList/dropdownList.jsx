@@ -8,7 +8,7 @@ class DropdownList extends Component {
         super();
 
         this.state = {
-            chosenOption: 1,
+            chosenOption: 0,
         }
 
         this.dropdownListRef = React.createRef();
@@ -31,22 +31,23 @@ class DropdownList extends Component {
         }
     }
 
-    handleOptionClick(ev) {
-        if(this.state.selectedOption !== "") {
-            this.setState({
-                selectedOption: "",
-            });
-        }
+    handleOptionClick(clickedOption) {
+        this.setState({
+            chosenOption: clickedOption,
+        });
     }
 
     render() {
-        console.log("LIST", this.props.list);
         return(
             <div id="dropdown-list-container" ref={this.dropdownListRef}>
                 <div id="options-container">
                     {
-                        this.props.list.map(option => (
-                            <div className="option title" onClick={this.handleOptionClick} >{option[0]}</div>
+                        this.props.list.map((option, index) => (
+                            <div 
+                                key={index} 
+                                className={this.state.chosenOption === index ? "option title selected" : "option title"} 
+                                onClick={() => this.handleOptionClick(index)}>
+                            {option[0]}</div>
                         ))
                     }
                     

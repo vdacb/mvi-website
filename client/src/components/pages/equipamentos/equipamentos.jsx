@@ -55,7 +55,6 @@ class Equipamentos extends Component {
             popup = null;
         }
 
-        //console.log(this.state.text.slice(3,5));
         return(
             <div id="equipamentos-container">
                 {popup}
@@ -65,6 +64,7 @@ class Equipamentos extends Component {
                 <HeadlineImage text={this.state.text.slice(1,3)} image={this.state.images[0]} openPopup={this.openPopup} />
 		        <BannerOnBottom text={this.state.text.slice(3,5)} openPopup={this.openPopup} />
                 <DropdownList list={this.state.dropList}/>
+                <Footer link="visitas/" next="Visitas" />
             </div>
         );
     }

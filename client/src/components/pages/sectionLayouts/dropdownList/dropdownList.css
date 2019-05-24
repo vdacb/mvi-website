@@ -6,7 +6,7 @@
 }
 
 #dropdown-list-container #options-container {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: none;
@@ -15,7 +15,6 @@
 
 #dropdown-list-container #options-container .option {
     margin-top: 5rem;
-   
     flex-grow: 0;
     cursor: pointer;
     text-transform: uppercase;

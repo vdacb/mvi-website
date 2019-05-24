@@ -27,6 +27,7 @@ class Alfabetos extends Component {
             dropList: [
                 ["Alfabetos", ["Alfabeto Arménio", "Alfabeto Etrusco", "Alfabeto Fenício", "Alfabeto Latino", "Alfabeto Russo", "Alfabeto Samaritano", "Alfabeto Sérvio", "Alfabeto Tibetano",]],
                 ["Escritas", ["Escrita Anglo-Saxónica", "Escrita Árabe", "Escrita Brâmanesa", "Escrita Chinesa", "Escrita Cuneiforme", "Escrita Etíope", "Escrita Gótica", "Escrita Grega", "Escrita Hieroglífica", "Escrita Ibérica", "Escrita Javanesa", "Escrita Kharostri", "Escrita Khmére ou Cambodjana", "Escrita Mandjou", "Escrita Nagari", "Escrita Nesta´liq", "Escrita Palmíria", "Escrita Persopolitana", "Escrita Siamesa", "Escrita Sul-Arábica", "Escrita Tifinag"]],
+                ["Vários", ["Aramaicos", "Bugis", "Caracteres Birmaneses", "Caractere Gujrati", "Cipriota","Fenícios", "Gótico", "Hebreus", "Hieroglifos Hititas", "Inscrições Líbias", "Laociano", "Língua Avesta", "Língua Copta", "Maia", "Runas", "Siríaco", "Tamil", "Turcos Europeus"]]
             ],
             slidePopupActive: false,
         }
