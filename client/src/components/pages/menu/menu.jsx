@@ -12,35 +12,35 @@ class Menu extends Component {
             menuItems: [
                 {
                     title: "Alfabetos",
-                    link: "alfabetos",
+                    link: "/alfabetos",
                 },
                 {
                     title: "Equipamentos",
-                    link: "equipamentos",
+                    link: "/equipamentos",
                 },
                 {
                     title: "Visitas",
-                    link: "visitas",
+                    link: "/visitas",
                 },
                 {
                     title: "História universal",
-                    link: "historia_universal",
+                    link: "/historia_universal",
                 },
                 {
                     title: "Glossário",
-                    link: "glossario",
+                    link: "/glossario",
                 },
                 {
                     title: "Museus",
-                    link: "museus",
+                    link: "/museus",
                 },
                 {
                     title: "Notícias",
-                    link: "noticias",
+                    link: "/noticias",
                 },
                 {
                     title: "Personalidades",
-                    link: "personalidades",
+                    link: "/personalidades",
                 },
             ]
         }

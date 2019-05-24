@@ -11,6 +11,7 @@ class HeadlineImage extends Component {
 
     componentDidMount() {
         const links = this.headlineImageRef.current.querySelectorAll("a.popup");
+        console.log(links);
 
         for(var i = 0; i < links.length; i++) {
             links[i].addEventListener("click", this.props.openPopup);
@@ -28,7 +29,7 @@ class HeadlineImage extends Component {
     render() {
         return(
             <div id="headline-image-container" ref={this.headlineImageRef}>
-                <div id="headline" className="text">{this.props.text[0]}</div>
+                <div id="headline" className="text" dangerouslySetInnerHTML={{__html: this.props.text[0]}}></div>
                 <div id="hi-content">
                     <div>
                         <p className="text" dangerouslySetInnerHTML={{__html: this.props.text[1]}}></p>

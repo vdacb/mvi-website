@@ -5,6 +5,7 @@ import Main from "./components/pages/main/main";
 import About from "./components/pages/about/about";
 import Datasheet from "./components/pages/datasheet/datasheet";
 import Alfabetos from "./components/pages/alfabetos/alfabetos";
+import Equipamentos from "./components/pages/equipamentos/equipamentos";
 import './App.css';
 
 const App = () => (
@@ -14,6 +15,7 @@ const App = () => (
 		<Route path="/about" component={About} />
 		<Route path="/ficha_tecnica" component={Datasheet} />
 		<Route path="/alfabetos" component={Alfabetos} />
+		<Route path="/equipamentos" component={Equipamentos} />
 	</HashRouter>
 )
 
