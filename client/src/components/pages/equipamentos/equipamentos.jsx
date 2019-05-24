@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
+import ScrollUpBtn from "./../../ui/scrollUpBtn/scrollUpBtn";
 import SlidePopup from "./../../ui/slidePopup/slidePopup";
 import LandingSection from "./../sectionLayouts/landingSection/landingSection";
 import HeadlineImage from "./../sectionLayouts/headlineImage/headlineImage";
@@ -48,7 +49,11 @@ class Equipamentos extends Component {
         var popup;
 
         if(this.state.slidePopupActive) {
-            popup = <SlidePopup title={this.state.popupText[this.state.selectedPopupTitle].title} text={this.state.popupText[this.state.selectedPopupTitle].text} image={this.state.popupText[this.state.selectedPopupTitle].image} closePopup={this.openPopup} />
+            popup = <SlidePopup 
+                        title={this.state.popupText[this.state.selectedPopupTitle].title} 
+                        text={this.state.popupText[this.state.selectedPopupTitle].text} 
+                        image={this.state.popupText[this.state.selectedPopupTitle].image} closePopup={this.openPopup}
+                    />
         }
 
         else {
@@ -60,10 +65,11 @@ class Equipamentos extends Component {
                 {popup}
                 <Header />
                 <ScrollBar />
+                <ScrollUpBtn />
                 <LandingSection text={this.state.text.slice(0,1)} title="Equipamentos." image={this.state.images[0]} openPopup={this.openPopup} />
                 <HeadlineImage text={this.state.text.slice(1,3)} image={this.state.images[0]} openPopup={this.openPopup} />
 		        <BannerOnBottom text={this.state.text.slice(3,5)} openPopup={this.openPopup} />
-                <DropdownList list={this.state.dropList}/>
+                <DropdownList list={this.state.dropList} openPopup={this.openPopup} />
                 <Footer link="visitas/" next="Visitas" />
             </div>
         );
