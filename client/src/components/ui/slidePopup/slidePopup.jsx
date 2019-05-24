@@ -3,9 +3,9 @@ import "./slidePopup.css";
 
 class SlidePopup extends Component {
     render() {
-        console.log(this.props);
         return (
             <div id="slide-popup-container">
+                <div id="slide-popup-gray-area" onClick={this.props.closePopup}></div>
                 <div id="slide-popup">
                     <div id="slide-popup-cross-container">
                         <img src={window.location.origin + "/img/black_cross.png"} onClick={this.props.closePopup} alt="Closing cross" />

@@ -16,6 +16,12 @@
     overflow: auto;
 }
 
+#slide-popup-container #slide-popup-gray-area {
+    width: 64vw;
+    height: 100vh;
+    position: absolute;
+}
+
 #slide-popup-container #slide-popup-cross-container {
     background-color: white;
     display: flex;
