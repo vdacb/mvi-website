@@ -6,6 +6,7 @@ import About from "./components/pages/about/about";
 import Datasheet from "./components/pages/datasheet/datasheet";
 import Alfabetos from "./components/pages/alfabetos/alfabetos";
 import Equipamentos from "./components/pages/equipamentos/equipamentos";
+import Noticias from "./components/pages/noticias/noticias";
 import './App.css';
 
 const App = () => (
@@ -16,7 +17,9 @@ const App = () => (
 		<Route path="/ficha_tecnica" component={Datasheet} />
 		<Route path="/alfabetos" component={Alfabetos} />
 		<Route path="/equipamentos" component={Equipamentos} />
+        <Route path="/noticias" component={Noticias} />
 	</HashRouter>
+
 )
 
 export default App;
