@@ -38,6 +38,10 @@ class Equipamentos extends Component {
         this.openPopup = this.openPopup.bind(this);
     }
 
+    componentDidMount() {
+        window.scrollTo(0,0);
+    }
+
     openPopup(ev) {
         this.setState({
             slidePopupActive: !this.state.slidePopupActive,

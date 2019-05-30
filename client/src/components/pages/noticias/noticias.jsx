@@ -50,6 +50,7 @@ class Noticias extends Component {
 
     componentDidMount() {
         window.addEventListener("scroll", this.handleStickyImageOnScroll);
+        window.scrollTo(0,0);
     }
 
     componentWillUnmount() {
