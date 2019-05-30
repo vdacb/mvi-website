@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import LandingSection from "./../sectionLayouts/landingSection/landingSection"; 
 import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
+import FullScreenPopup from "./../../ui/fullScreenPopup/fullScreenPopup";
 import "./noticias.css";
 
 class Noticias extends Component {
@@ -14,12 +15,13 @@ class Noticias extends Component {
             text: ["Aqui pode pesquisar e navegar pelo nosso arquivo de notícias, tudo relacionado com a imprensa."],
             images: ["/img/top_photos/CIMG0386.JPG"],
             chosenNews: 0,
+            fsPopupActive: false,
             scrollDistanceShowImage: 600,
             newsArr: [
                 {
                     from: "Museu Nacional da Imprensa",
                     title: "Museu da Imprensa assinala libertação de Auschwitz (71 anos) com livro de poemas e espetáculo teatral",
-                    text: "O Museu Nacional da Imprensa assinala a comemoração do Aniversário da Libertação de Auschwitz a 27 de janeiro, iniciativa integrada na exposição de fotografia de David Araújo, “Auschwitz: Marca(s) de uma herança 71 anos depois. Há 70 anos, em 27 de janeiro de 1945, o Exército Vermelho libertou Auschwitz, o maior e mais terrível campo de extermínio nazi, em cujas câmaras de gás e crematórios foram mortas pelo menos um milhão de pessoas. O programa que comemora o 71.º da efeméride terá início às 16H00 com o lançamento do livro “Poemas de Shoá” da autora Ana Paula Eabrouk (Edições Esgotadas). Segue-se o espetáculo “Com as nossas mãos”, às 17H, encenado por Maíra Ribeiro e interpretado pelos alunos da Oficina de Teatro da Escola Secundária Carlos Amarante – OutrArte.",
+                    text: "O Museu Nacional da Imprensa assinala a comemoração do Aniversário da Libertação de Auschwitz a 27 de janeiro, iniciativa integrada na exposição de fotografia de David Araújo, “Auschwitz: Marca(s) de uma herança 71 anos depois. Há 70 anos, em 27 de janeiro de 1945, o Exército Vermelho libertou Auschwitz, o maior e mais terrível campo de extermínio nazi, em cujas câmaras de gás e crematórios foram mortas pelo menos um milhão de pessoas.\nO programa que comemora o 71.º da efeméride terá início às 16H00 com o lançamento do livro “Poemas de Shoá” da autora Ana Paula Eabrouk (Edições Esgotadas). Segue-se o espetáculo “Com as nossas mãos”, às 17H, encenado por Maíra Ribeiro e interpretado pelos alunos da Oficina de Teatro da Escola Secundária Carlos Amarante – OutrArte.",
                     image: "mni_auschwitz.jpg",
                 }, 
                 {
@@ -46,6 +48,7 @@ class Noticias extends Component {
 
         this.handleNewsHover = this.handleNewsHover.bind(this);
         this.handleStickyImageOnScroll = this.handleStickyImageOnScroll.bind(this);
+        this.toggleFSPopup = this.toggleFSPopup.bind(this);
     } 
 
     componentDidMount() {
@@ -58,8 +61,6 @@ class Noticias extends Component {
     }
 
     handleStickyImageOnScroll() {
-
-        console.log(this.state.scrollDistanceShowImage);
         if(window.scrollY > this.state.scrollDistanceShowImage && this.state.stickyImageClass === "") {
             this.setState({
                 stickyImageClass: "fixed",
@@ -78,17 +79,30 @@ class Noticias extends Component {
             chosenNews: newsId,
         });
     }
+
+    toggleFSPopup() {
+        this.setState({
+            fsPopupActive: !this.state.fsPopupActive,
+        });
+    }
     
     render() {
+        var popup;
+
+        if(this.state.fsPopupActive) {
+            popup = <FullScreenPopup news={this.state.newsArr[this.state.chosenNews]} closePopup={this.toggleFSPopup} />
+        }
+
         return(
             <div id="noticias-container">
+                {popup}
                 <Header />
                 <ScrollBar />
                 <LandingSection title={this.state.title} text={this.state.text.slice(0,1)} image={this.state.images[0]} />
                 <div id="noticias-wrap">
                     {
                         this.state.newsArr.map((news, index) => (
-                            <div key={index} className="news" onMouseEnter={this.handleNewsHover.bind(this, index)}>
+                            <div key={index} className="news" onMouseEnter={this.handleNewsHover.bind(this, index)} onClick={this.toggleFSPopup}>
                                 <p className="text">{news.from}</p>
                                 <div className="title">{news.title}</div>
                                 <div className="seperation-bar"></div>

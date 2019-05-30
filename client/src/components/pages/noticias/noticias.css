@@ -14,10 +14,16 @@
     padding: 2rem;
     transition: 150ms all ease-in-out;
     cursor: pointer;
+    user-select: none;
 }
 
 #noticias-container .news:hover {
     background-color: #efefef;
+}
+
+#noticias-container .news:active {
+    background-color: #e0e0e0;
+    transition: none;
 }
 
 #noticias-container .news .text {

@@ -1,0 +1,42 @@
+#fspopup-container {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    background-color: white;
+    z-index: 20;
+}
+
+#fspopup-container #close-btn {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+}
+
+#fspopup-container .news {
+    cursor: default !important;
+    user-select: text !important;
+    margin-top: 5rem;
+}
+
+#fspopup-container .news:hover {
+    background-color: white !important;
+}
+
+#fspopup-container .news:active {
+    background-color: white !important;
+}
+
+#fspopup-container #p-container p.text {
+    margin-bottom: 3rem;
+    width: 50%;
+    margin-left: 10rem;
+}
+
+#fspopup-container #main-img-container {
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+}
