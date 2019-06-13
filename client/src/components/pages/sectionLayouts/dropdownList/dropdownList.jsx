@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import classNames from "classnames";
+//import classNames from "classnames";
 import "./dropdownList.css";
 
 class DropdownList extends Component {
@@ -46,8 +46,10 @@ class DropdownList extends Component {
                             <div 
                                 key={index} 
                                 className={this.state.chosenOption === index ? "option title selected" : "option title"} 
-                                onClick={() => this.handleOptionClick(index)}>
-                            {option[0]}</div>
+                                onClick={() => this.handleOptionClick(index)}
+                            >
+                                {option[0]}
+                            </div>
                         ))
                     }
                     
@@ -56,7 +58,7 @@ class DropdownList extends Component {
                 <div id="items-container">
                     {
                         this.props.list[this.state.chosenOption][1].map(item => (
-                            <a className="item text popup">{item}</a>
+                            <div href="" className="item text popup">{item}</div>
                         ))
                     }
                 </div>

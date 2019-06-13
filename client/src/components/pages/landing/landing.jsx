@@ -40,7 +40,7 @@ class Landing extends Component {
                 <Header />
                 <div id="landing-container">
                     <div className="vertical-banner">
-                        <img src={window.location.origin + "/img/top_photos/2005/Maquina.jpg"} />
+                        <img src={window.location.origin + "/img/top_photos/2005/Maquina.jpg"} alt="welcome" />
                     </div>
                     
                     <div className="content-container">

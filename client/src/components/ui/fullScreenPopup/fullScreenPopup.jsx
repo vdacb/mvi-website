@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import Footer from "./../footer/footer";
 import "./fullScreenPopup.css";
 
 class FullScreenPopup extends Component {
@@ -32,7 +31,7 @@ class FullScreenPopup extends Component {
 
         return(
             <div id="fspopup-container">
-                <img id="close-btn" src={window.location.origin + "/img/black_cross.png"} onClick={this.props.closePopup} />
+                <img id="close-btn" src={window.location.origin + "/img/black_cross.png"} onClick={this.props.closePopup} alt="close button"/>
                 <div id="fspopup-content">
                     {headline}    
                     <div id="p-container">
@@ -43,7 +42,7 @@ class FullScreenPopup extends Component {
                         }
                     </div>
                     <div id="main-img-container">
-                        <img src={window.location.origin + "/img/noticias/" + this.props.news.image} />
+                        <img src={window.location.origin + "/img/noticias/" + this.props.news.image} alt="news" />
                     </div>
                 </div>
             </div>

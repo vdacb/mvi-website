@@ -127,7 +127,7 @@ class Noticias extends Component {
                         ))
                     }
                     <div id="noticias-image-container" className={this.state.stickyImageClass} >
-                        <img src={window.location.origin + "/img/noticias/" + this.state.newsArr[this.state.chosenNews].image} />
+                        <img src={window.location.origin + "/img/noticias/" + this.state.newsArr[this.state.chosenNews].image} alt="sticky"/>
                     </div>
                 </div>
                 <Footer link="/alfabetos" next="Alfabetos" />
