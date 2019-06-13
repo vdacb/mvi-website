@@ -3,6 +3,7 @@ import LandingSection from "./../sectionLayouts/landingSection/landingSection";
 import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
 import FullScreenPopup from "./../../ui/fullScreenPopup/fullScreenPopup";
+import Footer from "./../../ui/footer/footer"; 
 import "./noticias.css";
 
 class Noticias extends Component {
@@ -49,25 +50,41 @@ class Noticias extends Component {
         this.handleNewsHover = this.handleNewsHover.bind(this);
         this.handleStickyImageOnScroll = this.handleStickyImageOnScroll.bind(this);
         this.toggleFSPopup = this.toggleFSPopup.bind(this);
+        this.handleWindowResize = this.handleWindowResize.bind(this);
     } 
 
     componentDidMount() {
         window.addEventListener("scroll", this.handleStickyImageOnScroll);
+        window.addEventListener("resize", this.handleWindowResize);
         window.scrollTo(0,0);
+        this.handleWindowResize();
     }
 
     componentWillUnmount() {
        window.removeEventListener("scroll", this.handleStickyImageOnScroll);
+       window.removeEventListener("resize", this.handleWindowResize);
+    }
+
+    handleWindowResize() {
+        var parentElement = document.querySelector("#noticias-container #noticias-wrap").getBoundingClientRect();
+        var body = document.body.getBoundingClientRect();
+        console.log(parentElement);
+
+        this.setState({
+            scrollDistanceShowImage: parentElement.top - body.top,
+        })
     }
 
     handleStickyImageOnScroll() {
-        if(window.scrollY > this.state.scrollDistanceShowImage && this.state.stickyImageClass === "") {
+        var parentElement = document.querySelector("#noticias-container #noticias-wrap").getBoundingClientRect();
+
+        if((parentElement.top > window.innerHeight/2) || (parentElement.bottom > window.innerHeight/2)) {
             this.setState({
                 stickyImageClass: "fixed",
             });
         }
 
-        else if(window.scrollY < this.state.scrollDistanceShowImage && this.state.stickyImageClass !== "") {
+        if((parentElement.top > window.innerHeight/2) || (parentElement.bottom < window.innerHeight/2)) {
             this.setState({
                 stickyImageClass: "",
             })
@@ -113,6 +130,7 @@ class Noticias extends Component {
                         <img src={window.location.origin + "/img/noticias/" + this.state.newsArr[this.state.chosenNews].image} />
                     </div>
                 </div>
+                <Footer link="/alfabetos" next="Alfabetos" />
             </div>
         )
     }

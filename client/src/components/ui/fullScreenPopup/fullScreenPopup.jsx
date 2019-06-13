@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Footer from "./../footer/footer";
 import "./fullScreenPopup.css";
 
 class FullScreenPopup extends Component {
@@ -36,8 +37,8 @@ class FullScreenPopup extends Component {
                     {headline}    
                     <div id="p-container">
                         {
-                            text.map(pg => (
-                                <p className="text">{pg}</p>
+                            text.map((pg, index) => (
+                                <p key={index} className="text">{pg}</p>
                             ))
                         }
                     </div>
