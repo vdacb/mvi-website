@@ -31,12 +31,18 @@
 
 #fspopup-container #p-container p.text {
     margin-bottom: 3rem;
-    width: 50%;
+    width: 45%;
     margin-left: 10rem;
+    font-size: 1.1rem;
 }
 
 #fspopup-container #main-img-container {
     position: absolute;
     top: 10rem;
-    right: 3rem;
+    right: 8rem;
+    width: 20rem;
+}
+
+#fspopup-container #main-img-container > img {
+    width: 100%;
 }
