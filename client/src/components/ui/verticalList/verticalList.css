@@ -1,0 +1,28 @@
+#vertical-list {
+    width: 10rem;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#vertical-list .vlist-option {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+#vertical-list .horizontal-line {
+    display: inline-block;
+    height: 1px;
+    width: 1.4rem;
+    background-color: #171717;
+    margin: 0 0.6rem;
+}
