@@ -13,10 +13,9 @@
 #vertical-list .vlist-option {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     margin: 0.5rem 0;
     cursor: pointer;
-    text-align: center;
 }
 
 #vertical-list .horizontal-line {

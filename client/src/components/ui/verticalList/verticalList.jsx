@@ -33,7 +33,6 @@ class VerticalList extends Component {
     handleWindowResize() {
         var parentElement = document.querySelector("#vertical-list").getBoundingClientRect();
         var body = document.body.getBoundingClientRect();
-        console.log(parentElement);
 
         this.setState({
             scrollDistanceShowImage: parentElement.top - body.top,
@@ -44,8 +43,8 @@ class VerticalList extends Component {
         return(
             <ul id="vertical-list">
                 {
-                    this.state.listOptions.map((item, index) => (
-                        <li className="vlist-option text" key={index} onClick={this.selectOption} >
+                    this.state.listOptions.map((item) => (
+                        <li className="vlist-option text" key={item[0]} onClick={() => this.props.changeLetter(item.join(""))} >
                             <label>{item[0]}</label>
                             <div className="horizontal-line"></div>
                             <label>{item[1]}</label>
