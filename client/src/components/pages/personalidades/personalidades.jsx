@@ -14,7 +14,8 @@ class Personalidades extends Component {
             title: "Personalidades.",
             text: ["A imprensa evoluiu ao longo dos séculos devido aos esforços, descobertas e invenções de várias figuras. Aqui nesta página estão, de forma ordenada, muitas destas figuras que perduraram ao longo dos séculos devido aos ibjetivos que atingiram."],
             images: ["/img/top_photos/DSC_7399.jpg"],
-            chosenLetter: "A",
+            chosenLetter: "AB",
+            verticalListClass: "",
             personalities: [
                 {
                     firstName: "John",
@@ -60,6 +61,28 @@ class Personalidades extends Component {
         }
 
         this.handleLetterChange = this.handleLetterChange.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll);
+    }
+
+    handleScroll() {
+        var parentElement = document.querySelector("#personalities-container").getBoundingClientRect();
+        
+
+        if((parentElement.top > window.innerHeight/2) || (parentElement.bottom > window.innerHeight/2)) {
+            this.setState({
+                verticalListClass: "visible",
+            });
+        }
+
+        if((parentElement.top > window.innerHeight/2) || (parentElement.bottom < window.innerHeight/2)) {
+            this.setState({
+                verticalListClass: "",
+            })
+        }
     }
 
     handleLetterChange(newLetter) {
@@ -75,7 +98,7 @@ class Personalidades extends Component {
             <div id="personalidades-container">
                 <Header />
                 <ScrollBar />
-                <VerticalList changeLetter={this.handleLetterChange} />
+                <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} />
                 <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} /> 
                 <div id="personalities-container">
                     {

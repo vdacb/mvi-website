@@ -41,7 +41,7 @@ class VerticalList extends Component {
 
     render() {
         return(
-            <ul id="vertical-list">
+            <ul id="vertical-list" className={this.props.visibilityClass}>
                 {
                     this.state.listOptions.map((item) => (
                         <li className="vlist-option text" key={item[0]} onClick={() => this.props.changeLetter(item.join(""))} >
