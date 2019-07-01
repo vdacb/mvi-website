@@ -7,7 +7,7 @@ class VerticalList extends Component {
         super();
 
         this.state = {
-            listOptions: [["A", "B"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"], ["K", "L"], ["M", "N"], ["O", "P"], ["Q", "R"], ["S", "T"]],
+            listOptions: [["A", "B", "À", "Á", "Â", "Ã", "Ä", "Å"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"], ["K", "L"], ["M", "N"], ["O", "P"], ["Q", "R"], ["S", "T"]],
         }
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -18,6 +18,7 @@ class VerticalList extends Component {
         window.addEventListener("scroll", this.handleScroll);
         window.addEventListener("resize", this.handleWindowResize);
         window.scrollTo(0,0);
+        this.props.changeLetter(this.state.listOptions[0].join(""));
         this.handleWindowResize();
     }
 

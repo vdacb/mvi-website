@@ -4,6 +4,7 @@ import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
 import VerticalList from "./../../ui/verticalList/verticalList";
 import Footer from "./../../ui/footer/footer";
+import SlidePopup from "./../../ui/slidePopup/slidePopup";
 import "./personalidades.css";
 
 class Personalidades extends Component {
@@ -14,8 +15,11 @@ class Personalidades extends Component {
             title: "Personalidades.",
             text: ["A imprensa evoluiu ao longo dos séculos devido aos esforços, descobertas e invenções de várias figuras. Aqui nesta página estão, de forma ordenada, muitas destas figuras que perduraram ao longo dos séculos devido aos ibjetivos que atingiram."],
             images: ["/img/top_photos/DSC_7399.jpg"],
-            chosenLetter: "AB",
+            chosenLetter: "",
             verticalListClass: "",
+            popupInfo: {
+                visible: false,
+            },
             personalities: [
                 {
                     firstName: "John",
@@ -55,22 +59,47 @@ class Personalidades extends Component {
                     periodAlive: "1509-1546",
                     description: "De origem francesa, o seu nome está intimamente ligado à uniformização dos caracteres, tendo concebido em 1757 um sistema de medida tipográfico e, em 1784, um alfabeto mais lógico e simples. Contruiu por volta de 1780 uma prensa de um só movimento, tendo substituído a madeira pelo ferro, mármore e cobre. Através de uma mármore e uma platina de dimensões idênticas, tornou a impressão mais rápida e a pressão mais forte. Dispunha de uma fundição e de uma fábrica de papel. Em 1795, Fermin Didot (1764-1836) filho de François, faz os primeiros ensaios, com êxito, da estereotipia e da qual, no mesmo ano, pede o respectivo brevet, sendo por isso considerado o inventor da Estereotipia. A família Didot marcou de forma indelével a tipografia francesa e europeia até ao séc. XIX.",
                     extendedDesc: null,
-                    image: "didot.gif",
+                    image: null,
                 },
             ],
         }
 
         this.handleLetterChange = this.handleLetterChange.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
+        this.togglePopup = this.togglePopup.bind(this);
     }
 
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
+        const links = document.querySelectorAll("a.popup");
+
+        for(var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", this.togglePopup);
+        }
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+        const links = document.querySelectorAll("a.popup");
+
+        for(var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", this.togglePopup);
+        }
+    }
+
+    togglePopup(characterInfo) {
+        this.setState({
+            popupInfo: {
+                visible: !this.state.popupInfo.visible,
+                title: characterInfo.firstName + " " + characterInfo.lastName || "",
+                img: characterInfo.img || "",
+                description: characterInfo.extendedDesc || "",
+            },
+        }, () => console.log(this.state.popupInfo));
     }
 
     handleScroll() {
         var parentElement = document.querySelector("#personalities-container").getBoundingClientRect();
-        
 
         if((parentElement.top > window.innerHeight/2) || (parentElement.bottom > window.innerHeight/2)) {
             this.setState({
@@ -93,38 +122,62 @@ class Personalidades extends Component {
 
     render() {
         var periodAlive;
+        var img;
+        var popup;
+
+        if(this.state.popupInfo.visible) {
+            popup = <SlidePopup title={this.state.popupInfo.title} text={this.state.popupInfo.description.split("\n")} closePopup={this.togglePopup} />
+        }
 
         return(
             <div id="personalidades-container">
+                {popup}
                 <Header />
                 <ScrollBar />
                 <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} />
                 <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} /> 
                 <div id="personalities-container">
                     {
-                        this.state.personalities.map((personality) => {
-                            console.log(this.state.chosenLetter, personality.lastName)
+                        this.state.personalities.map((personality, index) => {
                             if(personality.periodAlive) {
                                 periodAlive = (
                                     <span className="period-alive">{" (" + personality.periodAlive + ")"}</span>
                                 )
                             }
-                            
+
                             else {
                                 periodAlive = null;
                             }
 
+                            if(personality.image) {
+                                img = (
+                                    <img className="img" alt={personality.firstName + " " + personality.lastName} src={window.location.origin + "/img/personalidades/" + personality.image} />
+                                );
+                            }
+
+                            else {
+                                img = null;
+                            }
+
+
                             if(this.state.chosenLetter.includes(personality.lastName[0])) {
                                 return(
-                                    <div className="person">
-                                        <p className="name text">
-                                            <span className="first-letter">{personality.lastName[0]}</span>
-                                            <span className="full-name">
-                                                {personality.lastName.slice(1, personality.lastName.length) + ", " + personality.firstName}
-                                            {periodAlive}
-                                            </span>
-                                        </p>
-                                        <p className="text">{personality.description}</p>
+                                    <div className="person" key={index}>
+                                        <div className="information">
+                                            <p className="name text">
+                                                <span className="first-letter">{personality.lastName[0]}</span>
+                                                <span className="full-name">
+                                                    {personality.lastName.slice(1, personality.lastName.length) + ", " + personality.firstName}
+                                                {periodAlive}
+                                                </span>
+                                            </p>
+                                            <p className="text">{personality.description}</p>
+
+                                            {personality.extendedDesc ? <a className="popup" onClick={()=> this.togglePopup(personality)}>Ver Mais</a> : null}
+                                        </div>
+                                        <div className="img-container">
+                                            {img}
+                                        </div>
                                     </div>
                                 )
                             }

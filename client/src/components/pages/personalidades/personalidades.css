@@ -6,9 +6,26 @@
 }
 
 #personalities-container .person {
-    width: 50%;
-    margin: 0 auto;
+    width: 70%;
+    min-width: 30rem;
+    margin: 0 15rem;
     margin-bottom: 5rem;
+    display: flex;
+}
+
+#personalities-container .person > div.information {
+    width: 80%;
+}
+
+#personalities-container .person > div.img-container {
+    width: 15rem;
+    margin-left: 10rem;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#personalities-container .person img {
+    width: 100%;
 }
 
 #personalities-container .person .name {

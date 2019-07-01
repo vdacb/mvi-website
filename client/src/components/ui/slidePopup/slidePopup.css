@@ -46,6 +46,7 @@
     width: 100%;
     height: 35vh;
     overflow: hidden;
+    margin-bottom: -4rem;
 }
 
 #slide-popup-container #slide-popup-img-container img {
@@ -60,7 +61,7 @@
 }
 
 #slide-popup-container .title {
-    margin-top: 1rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     text-transform: capitalize;
     line-height: 3rem;
