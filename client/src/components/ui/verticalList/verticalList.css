@@ -17,6 +17,11 @@
     justify-content: space-between;
     margin: 0.5rem 0;
     cursor: pointer;
+    opacity: 0.5;
+}
+
+#vertical-list .vlist-option > * {
+    z-index: -1;
 }
 
 #vertical-list .horizontal-line {
@@ -29,4 +34,8 @@
 
 #vertical-list.visible {
     width: 10rem !important;
+}
+
+#vertical-list .selected {
+    opacity: 1 !important;
 }

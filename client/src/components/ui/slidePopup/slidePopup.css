@@ -71,3 +71,14 @@
    margin-top: 0.5rem;
    margin-bottom: 1.4rem;
 }
+
+#slide-popup-container .text * {
+    color: #dd5353 !important;
+}
+
+#slide-popup-container .horizontal-bar {
+    height: 1px;
+    background-color: #171717;
+    width: 83%;
+    margin: 5rem auto 4rem auto;
+}

@@ -24,6 +24,7 @@ class SlidePopup extends Component {
                             <p className="text">{paragraph}</p>
                         ))
                     }
+                    <div className="horizontal-bar"></div>
                 </div>
             </div>
         )
