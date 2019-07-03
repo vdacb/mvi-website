@@ -58,7 +58,7 @@ class DropdownList extends Component {
                 <div id="items-container">
                     {
                         this.props.list[this.state.chosenOption][1].map(item => (
-                            <div href="" className="item text popup">{item}</div>
+                            <div className="item text popup">{item}</div>
                         ))
                     }
                 </div>

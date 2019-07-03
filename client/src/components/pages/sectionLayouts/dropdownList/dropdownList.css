@@ -1,8 +1,8 @@
 #dropdown-list-container {
     width: 75vw;
-    height: 75vh;
+    min-height: 75vh;
     display: flex;
-    margin: 20rem auto 0 auto;
+    margin: 20rem auto 10rem auto;
 }
 
 #dropdown-list-container #options-container {
