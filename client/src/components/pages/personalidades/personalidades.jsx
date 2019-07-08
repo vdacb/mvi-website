@@ -159,7 +159,6 @@ class Personalidades extends Component {
                                 img = null;
                             }
 
-
                             if(this.state.chosenLetter.includes(personality.lastName[0])) {
                                 return(
                                     <div className="person" key={index}>

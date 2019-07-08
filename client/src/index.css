@@ -120,7 +120,7 @@ code {
 	margin-bottom: 1rem;
 }
 
-.text > a {
+.text > a, .popup {
 	font-weight: 900;
 	color: #9590D7;
 	cursor: pointer;
