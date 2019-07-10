@@ -10,6 +10,7 @@ import Noticias from "./components/pages/noticias/noticias";
 import Personalidades from "./components/pages/personalidades/personalidades";
 import HistoriaUniversal from "./components/pages/historiaUniversal/historiaUniversal";
 import Museus from "./components/pages/museus/museus";
+import Glossario from "./components/pages/glossario/glossario";
 import './App.css';
 
 const App = () => (
@@ -24,6 +25,7 @@ const App = () => (
         <Route path="/personalidades" component={Personalidades} />
 		<Route path="/historia_universal" component={HistoriaUniversal} />
 		<Route path="/museus" component={Museus} />
+		<Route path="/glossario" component={Glossario} />
 	</HashRouter>
 )
 

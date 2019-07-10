@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
-import ScrollUpBtn from "./../../ui/scrollUpBtn/scrollUpBtn";
 import LandingSection from "./../sectionLayouts/landingSection/landingSection";
 import SlidePopup from "./../../ui/slidePopup/slidePopup";
 import VerticalList from "./../../ui/verticalList/verticalList";
@@ -16,6 +15,7 @@ class Museus extends Component {
             title: "Museus.",
             text: ["Texto de experiência, mas, de forma sucinta, este é o lugar onde se lê sobre a imprensa globalizada"],
             images: ["/img/top_photos/ExpoPermanente.JPG"],
+            listOptions: [["A", "B", "À", "Á", "Â", "Ã", "Ä", "Å"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"], ["K", "L"], ["M", "N"], ["O", "P"], ["Q", "R"], ["S", "T"], ["U", "V"], ["W", "X"], ["Y", "Z"]],
             chosenLetter: "",
             popupInfo: {
                 visible: false,
@@ -131,8 +131,7 @@ class Museus extends Component {
                 {popup}
                 <Header />
                 <ScrollBar />
-                <ScrollUpBtn />
-                <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} />
+                <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} listOptions={this.state.listOptions} />
                 <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} /> 
                 <div id="museus-warp">
                     {
@@ -161,7 +160,7 @@ class Museus extends Component {
                                             <p className="desc text">
                                                 {
                                                     museum.links.map((link, index) => (
-                                                        <div className="popup" onClick={() => this.openLink(link)}>{link}</div>
+                                                        <a className="popup" onClick={() => this.openLink(link)}>{link}</a>
                                                     ))
                                                 }
                                             </p>

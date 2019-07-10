@@ -130,7 +130,7 @@ class Noticias extends Component {
                         <img src={window.location.origin + "/img/noticias/" + this.state.newsArr[this.state.chosenNews].image} alt="sticky"/>
                     </div>
                 </div>
-                <Footer link="/personalidades" next="Personalidades" />
+                <Footer link="/personalidades" next="Personalidades." />
             </div>
         )
     }

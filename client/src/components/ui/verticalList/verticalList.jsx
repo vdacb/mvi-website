@@ -6,10 +6,6 @@ class VerticalList extends Component {
     constructor() {
         super();
 
-        this.state = {
-            listOptions: [["A", "B", "À", "Á", "Â", "Ã", "Ä", "Å"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"], ["K", "L"], ["M", "N"], ["O", "P"], ["Q", "R"], ["S", "T"]],
-        }
-
         this.handleScroll = this.handleScroll.bind(this);
         this.handleWindowResize = this.handleWindowResize.bind(this);
         this.handleClick = this.handleClick.bind(this);
@@ -19,7 +15,7 @@ class VerticalList extends Component {
         window.addEventListener("scroll", this.handleScroll);
         window.addEventListener("resize", this.handleWindowResize);
         window.scrollTo(0,0);
-        this.props.changeLetter(this.state.listOptions[0].join(""));
+        this.props.changeLetter(this.props.listOptions[0].join(""));
         this.handleWindowResize();
     }
 
@@ -57,7 +53,7 @@ class VerticalList extends Component {
         return(
             <ul id="vertical-list" className={this.props.visibilityClass}>
                 {
-                    this.state.listOptions.map((item) => (
+                    this.props.listOptions.map((item) => (
                         <li className={"vlist-option text" } onClick={(ev) => this.handleClick(ev, item)}  >
                             <label>{item[0]}</label>
                             <div className="horizontal-line"></div>

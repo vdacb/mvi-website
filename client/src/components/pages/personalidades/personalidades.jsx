@@ -15,6 +15,7 @@ class Personalidades extends Component {
             title: "Personalidades.",
             text: ["A imprensa evoluiu ao longo dos séculos devido aos esforços, descobertas e invenções de várias figuras. Aqui nesta página estão, de forma ordenada, muitas destas figuras que perduraram ao longo dos séculos devido aos ibjetivos que atingiram."],
             images: ["/img/top_photos/DSC_7399.jpg"],
+            listOptions: [["A", "B", "À", "Á", "Â", "Ã", "Ä", "Å"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"], ["K", "L"], ["M", "N"], ["O", "P"], ["Q", "R"], ["S", "T"]],
             chosenLetter: "",
             verticalListClass: "",
             popupInfo: {
@@ -95,7 +96,7 @@ class Personalidades extends Component {
                 img: characterInfo.img || "",
                 description: characterInfo.extendedDesc || "",
             },
-        }, () => console.log(this.state.popupInfo));
+        });
     }
 
     handleScroll() {
@@ -134,7 +135,7 @@ class Personalidades extends Component {
                 {popup}
                 <Header />
                 <ScrollBar />
-                <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} />
+                <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} listOptions={this.state.listOptions} />
                 <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} /> 
                 <div id="personalities-container">
                     {
