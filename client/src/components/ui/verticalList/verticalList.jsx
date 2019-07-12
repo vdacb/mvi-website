@@ -53,8 +53,8 @@ class VerticalList extends Component {
         return(
             <ul id="vertical-list" className={this.props.visibilityClass}>
                 {
-                    this.props.listOptions.map((item) => (
-                        <li className={"vlist-option text" } onClick={(ev) => this.handleClick(ev, item)}  >
+                    this.props.listOptions.map((item, index) => (
+                        <li className={"vlist-option text" } onClick={(ev) => this.handleClick(ev, item)}  key={index}>
                             <label>{item[0]}</label>
                             <div className="horizontal-line"></div>
                             <label>{item[1]}</label>

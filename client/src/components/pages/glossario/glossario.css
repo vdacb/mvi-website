@@ -1,0 +1,39 @@
+#glossario-warp {
+    min-height: 30rem;
+}
+
+#glossario-warp .definition {
+    width: 70%;
+    min-width: 30rem;
+    margin: 0 15rem;
+    margin-bottom: 5rem;
+    display: flex;
+}
+
+#glossario-warp .definition > div.information {
+    width: 80%;
+}
+
+#glossario-warp .definition > div.img-container {
+    width: 20rem;
+    margin-left: 10rem;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#glossario-warp .definition img {
+    width: 100%;
+}
+
+#glossario-warp .definition .name {
+    font-size: 1.6rem;
+}
+
+#glossario-warp .definition .first-letter {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+#glossario-warp .definition .text.desc > div {
+    margin-bottom: 1rem;
+}
