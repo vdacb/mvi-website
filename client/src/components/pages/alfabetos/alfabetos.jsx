@@ -10,6 +10,7 @@ import PlainText from "./../sectionLayouts/plainText/plainText";
 import DropdownList from "./../sectionLayouts/dropdownList/dropdownList";
 import Footer from "./../../ui/footer/footer";
 import SlidePopup from "./../../ui/slidePopup/slidePopup";
+import content from "./content.json";
 import "./alfabetos.css";
 
 class Alfabetos extends Component {
@@ -29,27 +30,32 @@ class Alfabetos extends Component {
                 ["Escritas", ["Escrita Anglo-Saxónica", "Escrita Árabe", "Escrita Brâmanesa", "Escrita Chinesa", "Escrita Cuneiforme", "Escrita Etíope", "Escrita Gótica", "Escrita Grega", "Escrita Hieroglífica", "Escrita Ibérica", "Escrita Javanesa", "Escrita Kharostri", "Escrita Khmére ou Cambodjana", "Escrita Mandjou", "Escrita Nagari", "Escrita Nesta´liq", "Escrita Palmíria", "Escrita Persopolitana", "Escrita Siamesa", "Escrita Sul-Arábica", "Escrita Tifinag"]],
                 ["Vários", ["Aramaicos", "Bugis", "Caracteres Birmaneses", "Caractere Gujrati", "Cipriota","Fenícios", "Gótico", "Hebreus", "Hieroglifos Hititas", "Inscrições Líbias", "Laociano", "Língua Avesta", "Língua Copta", "Maia", "Runas", "Siríaco", "Tamil", "Turcos Europeus"]]
             ],
+            content: content,
             slidePopupActive: false,
+            popupContent: {},
         }
 
         this.openPopup = this.openPopup.bind(this);
     }
 
     componentDidMount() {
-        window.scrollTo(0,0);    
+        window.scrollTo(0,0);
     }
 
-    openPopup() {
+    openPopup(popupContent) {
         this.setState({
             slidePopupActive: !this.state.slidePopupActive,
+            popupContent: popupContent,
         });
+        console.log("OPEN POPUP");
     }
 
     render() {
         var popup;
 
         if(this.state.slidePopupActive) {
-            popup = <SlidePopup title="Escrita chinesa" text={this.state.popupText[0]} image="escrita_chinesa.gif" closePopup={this.openPopup} />
+            console.log("LOCATION", window.location.origin + "/img/alfabetos/" + this.state.popupContent.img_url);
+            popup = <SlidePopup title={this.state.popupContent.title} text={this.state.popupContent.text} image={window.location.origin + "/img/alfabetos/" + this.state.popupContent.img_fname} closePopup={this.openPopup} />
         }
 
         else {
@@ -69,7 +75,7 @@ class Alfabetos extends Component {
                 <ImageOnCenter text={this.state.text.slice(8,11)} image={this.state.images[4]} openPopup={this.openPopup} />
                 <HeadlineImage text={this.state.text.slice(11,14)} image={this.state.images[5]} openPopup={this.openPopup} />
                 <PlainText text={this.state.text.slice(14,17)} openPopup={this.openPopup} />
-                <DropdownList list={this.state.dropList} openPopup={this.openPopup} />
+                <DropdownList list={this.state.dropList} content={this.state.content} openPopup={this.openPopup} />
                 <Footer link="equipamentos/" next="Equipamentos." />
             </div>
         );

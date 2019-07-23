@@ -11,19 +11,15 @@ class SlidePopup extends Component {
                         <img src={window.location.origin + "/img/black_cross.png"} onClick={this.props.closePopup} alt="Closing cross" />
                     </div>
                         {
-                            this.props.image ? (
+                            !this.props.image.includes("undefined") ? (
                                 <div id="slide-popup-img-container">
-                                    <img src={window.location.origin + this.props.image} alt="banner" />
+                                    <img src={this.props.image} alt="banner" />
                                 </div>
                                 ) 
                             : null
                         }
                     <div className="title">{this.props.title}</div>
-                    {
-                        this.props.text.map(paragraph => (
-                            <p className="text">{paragraph}</p>
-                        ))
-                    }
+                    <p className="text" dangerouslySetInnerHTML={{__html: this.props.text}}></p>
                     <div className="horizontal-bar"></div>
                 </div>
             </div>

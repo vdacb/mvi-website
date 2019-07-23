@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-//import classNames from "classnames";
 import "./dropdownList.css";
 
 class DropdownList extends Component {
@@ -13,6 +12,7 @@ class DropdownList extends Component {
 
         this.dropdownListRef = React.createRef();
         this.handleOptionClick = this.handleOptionClick.bind(this);
+        this.handleContentClick = this.handleContentClick.bind(this);
     }
 
     componentDidMount() {
@@ -21,6 +21,7 @@ class DropdownList extends Component {
         for(var i = 0; i < links.length; i++) {
             links[i].addEventListener("click", this.props.openPopup);
         }
+        console.log(this.props.content);
     }
 
     componentWillUnmount() {
@@ -35,6 +36,13 @@ class DropdownList extends Component {
         this.setState({
             chosenOption: clickedOption,
         });
+    }
+
+    handleContentClick(ev) {
+        var selectedContent = this.props.content[ev.target.innerHTML];
+        selectedContent.title = ev.target.innerHTML;
+        console.log("CONTENT", selectedContent);
+        this.props.openPopup(selectedContent);
     }
 
     render() {
@@ -58,7 +66,7 @@ class DropdownList extends Component {
                 <div id="items-container">
                     {
                         this.props.list[this.state.chosenOption][1].map(item => (
-                            <div className="item text popup">{item}</div>
+                            <div className="item text popup" onClick={this.handleContentClick}>{item}</div>
                         ))
                     }
                 </div>
