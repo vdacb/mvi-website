@@ -1,0 +1,432 @@
+{
+    "content": [
+        {
+            "word": "Calcografia",
+            "description": "Arte de gravar em metal."
+        },
+        {
+            "word": "Carcela",
+            "description": "Tira de papel ou de pano que liga as folhas ou gravuras soltas do livro. Tiras de cartolina, de pouca ou muita espessura, para intercalar no livro quando \u00e9 necess\u00e1rio aumentar a grossura do lombo."
+        },
+        {
+            "word": "Cartonar",
+            "description": "Encadernar em cart\u00e3o."
+        },
+        {
+            "word": "Car\u00e1cter",
+            "description": "Forma que se d\u00e1 \u00e0 letra. Cada car\u00e1cter tem um desenho diferente. Os primitivos caracteres eram em madeira."
+        },
+        {
+            "word": "Cavalete",
+            "description": "Nome do m\u00f3vel onde o tip\u00f3grafo trabalha e se metem e guardam as caixas tipogr\u00e1ficas. S\u00e3o constru\u00eddos em madeira e em plano inclinado."
+        },
+        {
+            "word": "Cerografia",
+            "description": "Arte de gravar em que se proteje com cera a parte da prancha met\u00e1lica para n\u00e3o ser danificada pelos \u00e1cidos."
+        },
+        {
+            "word": "Chanfrador",
+            "description": "Pequena m\u00e1quina em ferro muito \u00fatil para cortar filetes de bronze, quando se deterioram nas extremidades e em diferentes sentidos."
+        },
+        {
+            "word": "Cisalha",
+            "description": "M\u00e1quina muito usada pelos encadernadores para corte de cart\u00e3o."
+        },
+        {
+            "word": "Clish\u00e9",
+            "description": "Chapa de impress\u00e3o obtido pelo processo de fotogravura, geralmente sobre placas de zinco ou cobre, assente e pregada sobre um bloco de madeira."
+        },
+        {
+            "word": "Composi\u00e7\u00e3o",
+            "description": "\u00c9 o conjunto das linhas compostas no componedor, formando gran\u00e9is, p\u00e1ginas, etc."
+        },
+        {
+            "word": "Cromolitografia",
+            "description": "Arte de litografar com v\u00e1rias cores por meio de impress\u00f5es sucessivas."
+        },
+        {
+            "word": "Cromotipografia",
+            "description": "Arte de imprimir em cores. Emprega-se principalmente quando h\u00e1 sobreposi\u00e7\u00e3o de tintas."
+        },
+        {
+            "word": "Cunhos",
+            "description": "Pequenas pe\u00e7as de ferro destinadas ao aperto das formas, nas ramas."
+        },
+        {
+            "word": "Encaderna\u00e7\u00e3o",
+            "description": "Arte de unir em volume as folhas de um livro para facilitar o seu uso. Na Idade M\u00e9dia , a encaderna\u00e7\u00e3o, era de manufactura mon\u00e1stica e frades escolhidos exerciam o of\u00edcio de encadernador. As primeiras encaderna\u00e7\u00f5es que se fizeram em Portugal, eram em t\u00e1buas cobertas de prata, com figuras trabalhadas, e em t\u00e1buas cobertas forradas em pele, com chapas da bronze. A encaderna\u00e7\u00e3o portuguesa atingiu a m\u00e1xima sumptuosidade no sec. XVIII."
+        },
+        {
+            "word": "Entrelinhas",
+            "description": "Tiras de metal-tipo de v\u00e1rias dimens\u00f5es e mais baixos que os caracteres."
+        },
+        {
+            "word": "Envernizar",
+            "description": "Dar uma camada de verniz especial como preparo final de um livro."
+        },
+        {
+            "word": "Espa\u00e7os",
+            "description": "Pe\u00e7as de metal-tipo fundidos no corpo da letra, mas mais baixos e com diversas grossuras, que servem para separar as palavras e justificar as linhas."
+        },
+        {
+            "word": "Esteriotipia",
+            "description": "A Arte de fundir p\u00e1ginas para a impress\u00e3o daquelas obras de que se devem fazer v\u00e1rias edi\u00e7\u00f5es e cujo molde da matriz foi tirado sobre a composi\u00e7\u00e3o de caracteres m\u00f3veis, em gesso ou mais modernamente em papel - pasta especial. Antes do aparecimento do offset, a esteriotipia era uma enorme vantagem para as ind\u00fastrias tipogr\u00e1ficas, porque evitava o amassamento dos car\u00e1cteres soltos."
+        },
+        {
+            "word": "Filetes",
+            "description": "Tiras largas de metal \u00e0 altura da letra, fundidas desde um ponto em diante. est\u00e3o inclu\u00eddos na designa\u00e7\u00e3o gen\u00e9rica de filetes, todos os tra\u00e7os usados na tipografia."
+        },
+        {
+            "word": "Fotogravura",
+            "description": "O conjunto de provas fotogr\u00e1ficas, por meio das quais se produzem chapas gravadas, pr\u00f3prias para tirar pela impress\u00e3o provas sobre papel"
+        },
+        {
+            "word": "Fotomec\u00e2nica",
+            "description": "Conjunto de opera\u00e7\u00f5es fotogr\u00e1ficas utilizadas na prepara\u00e7\u00e3o de gravuras e, em geral, de todo o material de impress\u00e3o."
+        },
+        {
+            "word": "Fototipografia",
+            "description": "Arte de obter matrizes tipogr\u00e1ficas fazendo aplica\u00e7\u00f5es dos procedimentos fotogr\u00e1ficos \u00e0 tipografia."
+        },
+        {
+            "word": "Fundi\u00e7\u00e3o",
+            "description": "Estabelecimento onde se fundem ou fabricam os caracteres."
+        },
+        {
+            "word": "F\u00f3lios",
+            "description": "Numera\u00e7\u00e3o que se p\u00f5e \u00e0 cabe\u00e7a ou p\u00e9 de p\u00e1ginas de uma obra, folheto ou jornal. Podem ser num\u00e9ricos ou explicativos."
+        },
+        {
+            "word": "Galvanizar",
+            "description": "Aplicar uma capa de metal sobre outra por meio da galvaniza\u00e7\u00e3o."
+        },
+        {
+            "word": "Galvanotipia",
+            "description": "Procedimento galvanopl\u00e1stico que n\u00e3o faz uso uso do molde para reprodu\u00e7\u00e3o."
+        },
+        {
+            "word": "Gamografia",
+            "description": "Arte de riscar papel."
+        },
+        {
+            "word": "Gipsografia",
+            "description": "Processo de estampar em gesso. Estampa que se obtem por este processo."
+        },
+        {
+            "word": "Granel",
+            "description": "Composi\u00e7\u00e3o que n\u00e3o est\u00e1 devidamente paginada. Compor a ... - , sem cuidado."
+        },
+        {
+            "word": "Gravura",
+            "description": "Arte de gravar uma mat\u00e9ria dura que possa ser reproduzido por impress\u00e3o. A gravura pode ser sobre madeira (\u00e0 veia, com canivete em madeiras macias e a buril em madeiras duras) ou metal (a buril ou com mordentes)."
+        },
+        {
+            "word": "Grilo",
+            "description": "Pequena pe\u00e7a de a\u00e7o que, pela sua semelhan\u00e7a com o grilo propriamente dito, desempenha nas m\u00e1quinas-minervas a miss\u00e3o de balizas, encostas, ou esperas, pela sua fixa\u00e7\u00e3o \u00e0s almofadas."
+        },
+        {
+            "word": "Guarnecer",
+            "description": "P\u00f4r em qualquer forma uma tarja ou filetes, assim como tamb\u00e9m colocar em redor da mesma uma linha de quadrados para que justifiquem perfeitamente os filetes ou tarja. A opera\u00e7\u00e3o de revestir o cilindro das m\u00e1quinas com folhas de papel, baeta, lona, etc., etc."
+        },
+        {
+            "word": "Guilhotina",
+            "description": "M\u00e1quina de cortar papel, muito perfeita, de v\u00e1rios sistemas, sobressaindo as dos fabricantes alem\u00e3es Karl Krause e Mansfeld."
+        },
+        {
+            "word": "Helioplastia",
+            "description": "Arte de produzir moldes para imprimir, de gelatina endurecida, na qual se obtem uma prova fotogr\u00e1fica."
+        },
+        {
+            "word": "Ilustrar",
+            "description": "Adornar com gravuras um texto."
+        },
+        {
+            "word": "Ilustra\u00e7\u00e3o",
+            "description": "Estampa, arte de gravar um livro ."
+        },
+        {
+            "word": "Impress\u00e3o",
+            "description": "Diz-se da obra impressa, forma maneira e meios de consegui-la, e ainda do mesmo acto de execut\u00e1-la."
+        },
+        {
+            "word": "Imprimir",
+            "description": "Marcar os moldes da impress\u00e3o no papel por meio de press\u00e3o."
+        },
+        {
+            "word": "Inculcar",
+            "description": "Juntar demasiado as letras ou palavras."
+        },
+        {
+            "word": "Incun\u00e1bulo",
+            "description": "Obra impressa que data da origem da Imprensa. Denominam-se assim os livros impressos durante os primeiros cinquenta anos da inven\u00e7\u00e3o da imprensa, ou seja de 1450 a 1500."
+        },
+        {
+            "word": "Intercalar",
+            "description": "Meter folhas entre as que se v\u00e3o imprimindo para evitar que a tinta suje as folhas que ficam em baixo."
+        },
+        {
+            "word": "Interfoliar",
+            "description": "Intercalar folhas em branco entre as impressas de um livro."
+        },
+        {
+            "word": "Interpaginar",
+            "description": "Interfoliar."
+        },
+        {
+            "word": "Justificar",
+            "description": "O acto de meter ou tirar espa\u00e7os, procurando reparti-los com igualdade para se p\u00f4r a linha \u00e0 medida que se deseja."
+        },
+        {
+            "word": "Letra",
+            "description": "D\u00e1-se em geral este nome aos caracteres ou tipos que servem para executar a composi\u00e7\u00e3o. \u00c9 constitu\u00edda por uma liga de chumbo, r\u00e9gulo de antim\u00f3nio e estanho. A letra, propriamente dita, \u00e9 o todo que vai desde a parte saliente que imprime e que se denomina olho, at\u00e9 ao fim da haste que o sustenta."
+        },
+        {
+            "word": "Marginar",
+            "description": "Fazer e deixar margens no papel."
+        },
+        {
+            "word": "Material Branco",
+            "description": "\u00c9 constitu\u00eddo por espa\u00e7os, quadrados, quadratins, entrelinhas de metal-tipo, lingotes e quadratins."
+        },
+        {
+            "word": "Matriz",
+            "description": "O molde em que fundem os tipos. Pequeno bloco de cobre ou ferro, em forma paralel\u00edpidica, onde est\u00e1 cavada e invertida a letra."
+        },
+        {
+            "word": "Medida",
+            "description": "Dimens\u00e3o determinada pelo n\u00famero de quadratins de corpo 12 (c\u00edceros) em que \u00e9 feito qualquer trabalho de composi\u00e7\u00e3o."
+        },
+        {
+            "word": "Melotipia",
+            "description": "Reprodu\u00e7\u00e3o da m\u00fasica por meio de tipos mov\u00edveis."
+        },
+        {
+            "word": "Metalografia",
+            "description": "Arte de gravar em metais especialmente no vazio."
+        },
+        {
+            "word": "Microfotografia",
+            "description": "Fotografia de prepara\u00e7\u00f5es microsc\u00f3picas"
+        },
+        {
+            "word": "Minervista",
+            "description": "Oper\u00e1rio impressor tipogr\u00e1fico que trabalho com m\u00e1quinas de pequeno formato designadas por Minervas, movidas a electricidade ou com o p\u00e9."
+        },
+        {
+            "word": "Mordan\u00e7agem",
+            "description": "A ac\u00e7\u00e3o do a\u00e7o n\u00edtrico sobre zinco e do percloreto de ferro sobre o cobre na fotozincografia e na fotogravura."
+        },
+        {
+            "word": "Morrinotipia",
+            "description": "Arte de imprimir sobre porcelana."
+        },
+        {
+            "word": "Morrinotipurgia",
+            "description": "Impress\u00e3o tipogr\u00e1fica com car\u00e1cteres fabricados de porcelana, sistema ensaiado em 1878 em Fran\u00e7a que n\u00e3o teve aceita\u00e7\u00e3o."
+        },
+        {
+            "word": "Oleografia",
+            "description": "Arte da gravura que imita a pintura a \u00f3leo."
+        },
+        {
+            "word": "Pantotopia",
+            "description": "Nome que alguns d\u00e3o ao conjunto de procedimentos da grava\u00e7\u00e3o para a impress\u00e3o em relevo."
+        },
+        {
+            "word": "Papirografia",
+            "description": "Arte de imprimir litograficamente no papel o cart\u00e3o que substitui a pedra."
+        },
+        {
+            "word": "Parangonar",
+            "description": "Executar a justifica\u00e7\u00e3o em uma mesma linha, palavras compostas em caracteres de corpos desiguais. Em outros tempos era esta opera\u00e7\u00e3o muito dif\u00edcil, porque cada fundi\u00e7\u00e3o tipogr\u00e1fica lan\u00e7ava no mercado tipos de diferentes linhas. De modo que ao juntar-se letras de um mesmo corpo, estas desalinhavam. A \"Linea Standard\" dos Estados Unidos, adoptada na confer\u00eancia dos patr\u00f5es fundidores e impressores reunida em Setembro de 1905, acabou com este inconveniente e desde esta data todos os tipos modernos est\u00e3o fundidos a esta \"Linea Standard\" ou linha normal. Este novo melhoramento permite reunir caracteres diversos do mesmo corpo sem necessidade de recorrermos \u00e0s entrelinhas suplementares para se conseguir um alinhamento perfeito."
+        },
+        {
+            "word": "Picotar",
+            "description": "S\u00e9rie de furos que se d\u00e3o em determinados impressos, como por exemplo, tal\u00f5es, recibos,etc. Para mais facilmente rasgar-se a parte que se tem de utilizar."
+        },
+        {
+            "word": "Pirograva\u00e7\u00e3o",
+            "description": "Procedimento para gravar em madeira por meio de um a ponta met\u00e1lica enrigecida."
+        },
+        {
+            "word": "Poliamatipia",
+            "description": "Procedimento por meio do qual se fundem ao mesmo tempo muitos caracteres da impress\u00e3o."
+        },
+        {
+            "word": "Policromia",
+            "description": "Conjunto de v\u00e1rias cores."
+        },
+        {
+            "word": "Policromotipografia",
+            "description": "Impress\u00e3o em v\u00e1rias cores, uma de cada vez."
+        },
+        {
+            "word": "Politipia",
+            "description": "Arte de reproduzir em metal uma grava\u00e7\u00e3o sobre madeira."
+        },
+        {
+            "word": "Prelo",
+            "description": "M\u00e1quina primitiva de impress\u00e3o manual, usada durante muitos anos pelos impressores, antes da inven\u00e7\u00e3o das m\u00e1quinas cil\u00edndricas."
+        },
+        {
+            "word": "Prensa",
+            "description": "M\u00e1quina usada pelos encadernadores para apertar os livros."
+        },
+        {
+            "word": "Prova",
+            "description": "A primeira impress\u00e3o que se faz de qualquer forma."
+        },
+        {
+            "word": "Pun\u00e7\u00e3o",
+            "description": "Consiste numa base quadrilonga de a\u00e7o macio, de 4 a 5 cm de altura, polido numa extremidade, em cuja superf\u00edcie se transporta o desenho da letra e que serve para cavar as matrizes."
+        },
+        {
+            "word": "Quadrilongos",
+            "description": "Pe\u00e7as fundidas em metal-tipo, ferro, alum\u00ednio e madeira de diversas espessuras e comprimentos sistem\u00e1ticos."
+        },
+        {
+            "word": "Quatricromia",
+            "description": "Impress\u00e3o de uma gravura a quatro cores, as da tricromia e mais um gris ou negro."
+        },
+        {
+            "word": "Quir\u00f3tipografia",
+            "description": "Arte de imprimir com a m\u00e3o, isto \u00e9 sem necessidade da prensa."
+        },
+        {
+            "word": "Radiolineotipia",
+            "description": "Composi\u00e7\u00e3o tipogr\u00e1fica \u00e0 dist\u00e2ncia por meio de ondas hertezianas."
+        },
+        {
+            "word": "Recorrido",
+            "description": "Opera\u00e7\u00e3o de ajuste de algumas p\u00e1ginas, ora aumentando o seu tamanho, ora reduzindo-o. A parte da composi\u00e7\u00e3o em que se efectua esta opera\u00e7\u00e3o."
+        },
+        {
+            "word": "Refundi\u00e7\u00e3o",
+            "description": "A fundi\u00e7\u00e3o de rolos que se faz com a mesma cola dos rolos que j\u00e1 n\u00e3o servem."
+        },
+        {
+            "word": "Reimpress\u00e3o",
+            "description": "A segunda, terceira ou quarta vez que se imprime uma obra."
+        },
+        {
+            "word": "Remendagem",
+            "description": "D\u00e1-se o nome de remendagem \u00e0quela parte da tipografia dedicada \u00e0 composi\u00e7\u00e3o de trabalhos que n\u00e3o tem rela\u00e7\u00e3o directa com a composi\u00e7\u00e3o e pagina\u00e7\u00e3o do livro. Abarca toda a classe de impressos destinados ao com\u00e9rcio e ind\u00fastria."
+        },
+        {
+            "word": "Rolo",
+            "description": "cilindro de subst\u00e2ncia gelatinosa, grude e mela\u00e7o, grude e glicerina, gelatina e glicerina, e outras subst\u00e2ncias, etc., fundido em volta duma haste a que se chama sabugo. Existe um \"rolo de m\u00e3o\" pequeno para a impress\u00e3o de provas."
+        },
+        {
+            "word": "Similigravura",
+            "description": "Gravura sobre zinco ou cobre obtida por processos fotogr\u00e1ficos e quimicos cuja principal caracter\u00edstica \u00e9 a interposi\u00e7\u00e3o de uma ret\u00edcula ou granido entre a objectiva e o \u00e9cran, para se obter o modelado dos tons."
+        },
+        {
+            "word": "Tamborete",
+            "description": "Peda\u00e7o de madeira quadricular e plana, destinada a baixar nas formas as letras que est\u00e3o altas."
+        },
+        {
+            "word": "Tinteiro",
+            "description": "parte da m\u00e1quina onde est\u00e1 depositada a tinta que \u00e9 depois distribu\u00edda pela forma com o aux\u00edlio de v\u00e1rios rolos."
+        },
+        {
+            "word": "Tipo",
+            "description": "Nome que se aplica genericamente a todos as caracteres de chumbo."
+        },
+        {
+            "word": "Tipografia",
+            "description": "Arte de copiar em caracteres de metal os diferentes trabalhos pr\u00f3prios da imprensa. Deriva do latim typus (forma, figura, molde) e do grego graphos (escritura)."
+        },
+        {
+            "word": "Tipolitografia",
+            "description": "Processo de impress\u00e3o sobre a pedra litogr\u00e1fica mediante o transporte de uma prova tipogr\u00e1fica."
+        },
+        {
+            "word": "Tip\u00f3metro",
+            "description": "Instrumento de que se servem os fundidores para examinar se as letras t\u00eam o corpo e a altura que se deseja. Regreta de madeira ou metal, graduada em pontos e c\u00edceros, de que se serve o tip\u00f3grafo para m\u00faltiplas opera\u00e7\u00f5es."
+        },
+        {
+            "word": "Tricomia",
+            "description": "Ilustra\u00e7\u00e3o impressa tipograficamente, com tr\u00eas gravuras, obtidas com a interven\u00e7\u00e3o dos chamados filtros, para a obten\u00e7\u00e3o fiel do modelo ou aguarela. A impress\u00e3o da tricomia \u00e9 executada com tr\u00eas cores prim\u00e1rias: amarelo, vermelho e azul, raz\u00e3o porque, para a consecu\u00e7\u00e3o dos clish\u00e9s para cada uma das cores, se utilizam os filtros representativos das cores ecund\u00e1rias, ou sejam violeta, verde e laranja."
+        },
+        {
+            "word": "T\u00edmpano",
+            "description": "parte da prensa manual, em cujo caixilho, coberto de estofo de algod\u00e3o, se colocam as folhas de imprimir."
+        },
+        {
+            "word": "Vinheta",
+            "description": "Colec\u00e7\u00e3o de adornos de v\u00e1rios corpos, com os quais se fazem infinitas combina\u00e7\u00f5es decorativas ."
+        },
+        {
+            "word": "Volante",
+            "description": "Roda que regulariza o movimento das m\u00e1quinas."
+        },
+        {
+            "word": "Xilografia",
+            "description": "Impress\u00e3o sobre uma t\u00e1bua gravada, anterior \u00e0 descoberta da imprensa e de que esta evidentemente descende. Aplica-se ainda o voc\u00e1bulo \u00e0 gravura em madeira."
+        },
+        {
+            "word": "Zincografia",
+            "description": "Gravura sobre zinco cujo transporte \u00e9 feito por meio da litografia."
+        },
+        {
+            "word": "Acrografia",
+            "description": "Arte de gravar em relevo por meio \u00e1gua forte."
+        },
+        {
+            "word": "Alcear",
+            "description": "Colocar as folhas dobradas de uma obra sobre uma mesa em por\u00e7\u00f5es aproximadamente iguais, recolh\u00ea-las e compil\u00e1-las desde a primeira folha at\u00e9 \u00e0 \u00faltima."
+        },
+        {
+            "word": "Alinhar",
+            "description": "Acertar uma composi\u00e7\u00e3o defeituosa, mal justificada ou parangonagens mal feitas, mostrando ondula\u00e7\u00e3o."
+        },
+        {
+            "word": "Antim\u00f3nio",
+            "description": "Metal fr\u00e1gil, pesado, de c\u00f4r branca brilhante, bastante parecido com o estanho, que se emprega para a fundi\u00e7\u00e3o dos tipos com a uni\u00e3o de chumbo, para evitar demasiada flexibilidade."
+        },
+        {
+            "word": "Aparar",
+            "description": "Cortar duma s\u00f3 vez e em m\u00e1quina apropriada o conjunto das folhas de um livro."
+        },
+        {
+            "word": "Assentar",
+            "description": "Opera\u00e7\u00e3o que o impressor faz de todas as vezes que imp\u00f5em uma forma, com o ma\u00e7o e a assentadeira, batendo ao de leve sobre os caracteres para que eles fiquem ao mesmo n\u00edvel."
+        },
+        {
+            "word": "Atar",
+            "description": "O mesmo que amarrar. Prender com fio de norte as p\u00e1ginas, os gran\u00e9is, as formas de remendagem, etc."
+        },
+        {
+            "word": "Autografia",
+            "description": "Arte de reproduzir um escrito, desenho, etc. transladando-se para uma pedra preparada convenientemente."
+        },
+        {
+            "word": "Balanc\u00e9",
+            "description": "Aparelho em forma de prensa com dois planos em sentido horizontal, usado pelos encadernadores para, tendo aquecido as letras de metal, cunhar a ouro as capas dos livros."
+        },
+        {
+            "word": "Balas",
+            "description": "Instrumentos de que se serviam os antigos impressores para dar tinta \u00e0s formas antes da inven\u00e7\u00e3o dos rolos. Depois de compostos e justos os caracteres, a tinta era destribu\u00edda com uma pequena almofada de l\u00e3, cobertas de pele de cordeiro, tendo um cabo para se lhes pegar. Os indiv\u00edduos que delas se serviam chamavam-se bate-balas ou batedor."
+        },
+        {
+            "word": "Brochar",
+            "description": "Coser as folhas de livros, depois de dobradas e ordenadas, ligando-lhes em seguida uma capa de papel."
+        },
+        {
+            "word": "Distribuir",
+            "description": "Desmanchar as formas que saem da m\u00e1quina depois de impressas, arrumando o material nos seus devidos lugares. Deitar tipo \u00e0 caixa."
+        },
+        {
+            "word": "Ditografia",
+            "description": "Repeti\u00e7\u00e3o nas c\u00f3pias de um manuscrito antigo de uma letra, s\u00edlaba ou palavra."
+        },
+        {
+            "word": "Dobragem",
+            "description": "\u00c9 o acto de dobrar em determinado n\u00famero de vezes, a folha de m\u00e1quina ou de impress\u00e3o , transformando-a em caderno."
+        },
+        {
+            "word": "Numerador",
+            "description": "Pequena m\u00e1quina que, automaticamente, muda os n\u00fameros de impresso para impresso."
+        }
+    ]
+}
