@@ -4,6 +4,7 @@ import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
 import FullScreenPopup from "./../../ui/fullScreenPopup/fullScreenPopup";
 import Footer from "./../../ui/footer/footer"; 
+import content from "./content.json";
 import "./noticias.css";
 
 class Noticias extends Component {

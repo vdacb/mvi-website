@@ -39,9 +39,9 @@ class DropdownList extends Component {
     }
 
     handleContentClick(ev) {
+        console.log("CONTENT", this.props.content);
         var selectedContent = this.props.content[ev.target.innerHTML];
         selectedContent.title = ev.target.innerHTML;
-        console.log("CONTENT", selectedContent);
         this.props.openPopup(selectedContent);
     }
 

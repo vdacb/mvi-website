@@ -8,6 +8,7 @@ import HeadlineImage from "./../sectionLayouts/headlineImage/headlineImage";
 import BannerOnBottom from "./../sectionLayouts/bannerOnBottom/bannerOnBottom";
 import DropdownList from "./../sectionLayouts/dropdownList/dropdownList";
 import Footer from "./../../ui/footer/footer";
+import content from "./content.json";
 import "./equipamentos.css";
 
 class Equipamentos extends Component {
@@ -26,13 +27,14 @@ class Equipamentos extends Component {
                 },
             },
             dropList: [
-                ["Pré-impressão", ["Máquina", "Máquina", "Máquina", "Máquina", "Máquina"]],
-                ["Impressão", ["Máquina 2", "Máquina 2", "Máquina 2", "Máquina 2", "Máquina 2",]],
-                ["Acabamentos", ["Máquina 3", "Máquina 3", "Máquina 3", "Máquina 3", "Máquina 3"]],
-                ["Diversos", ["Máquina 4", "Máquina 4", "Máquina 4", "Máquina 4", "Máquina 4", "Máquina 4"]],
+                ["Pré-impressão", ["Tipos em madeira", "Armário em madeira para tipos em chumbo", "Caldeira de fundição", "Máquina de escariar", "Camera", "Máquina de composição mecânica", "Máquina de composição mecânica", "Máquina de composição mecânica", "Máquina de composição mecânica"]],
+                ["Impressão", ["Prelo de impressão manual 'Albion Press'", "Prelo tipográfico manual", "Máquina de impressão", "Máquina de impressão a pedal", "Máquina de impressão", "Máquina de impressão", "Máquina de impressão vertical"]],
+                ["Acabamentos", ["Máquina de vinco", "Máquina de coser a arame", "Prensa de encadernação",]],
+                ["Diversos", ["Máquina para atar jornais", "Fonógafo", "Telex", "Máquina de endereçar", "Máquina para selar",]],
             ],
             selectedPopupTitle: "",
             slidePopupActive: false,
+            content: content,
         }
 
         this.openPopup = this.openPopup.bind(this);
@@ -42,10 +44,11 @@ class Equipamentos extends Component {
         window.scrollTo(0,0);
     }
 
-    openPopup(ev) {
+    openPopup(popupContent) {
+        console.log(popupContent);
         this.setState({
             slidePopupActive: !this.state.slidePopupActive,
-            selectedPopupTitle: ev.target.innerText,
+            popupContent: popupContent,
         });
     }
 
@@ -53,11 +56,8 @@ class Equipamentos extends Component {
         var popup;
 
         if(this.state.slidePopupActive) {
-            popup = <SlidePopup 
-                        title={this.state.popupText[this.state.selectedPopupTitle].title} 
-                        text={this.state.popupText[this.state.selectedPopupTitle].text} 
-                        image={this.state.popupText[this.state.selectedPopupTitle].image} closePopup={this.openPopup}
-                    />
+            console.log("POPUP", this.state.selectedPopupTitle)
+            popup = <SlidePopup title={this.state.popupContent.title} text={this.state.popupContent.text} image={window.location.origin + "/img/equipamentos/" + this.state.popupContent.img_fname} closePopup={this.openPopup} />
         }
 
         else {
@@ -73,7 +73,7 @@ class Equipamentos extends Component {
                 <LandingSection text={this.state.text.slice(0,1)} title="Equipamentos." image={this.state.images[0]} openPopup={this.openPopup} />
                 <HeadlineImage text={this.state.text.slice(1,3)} image={this.state.images[0]} openPopup={this.openPopup} />
 		        <BannerOnBottom text={this.state.text.slice(3,5)} openPopup={this.openPopup} />
-                <DropdownList list={this.state.dropList} openPopup={this.openPopup} />
+                <DropdownList list={this.state.dropList} content={this.state.content} openPopup={this.openPopup} />
                 <Footer link="visitas/" next="Visitas" />
             </div>
         );
