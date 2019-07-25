@@ -65,9 +65,18 @@ class DropdownList extends Component {
 
                 <div id="items-container">
                     {
-                        this.props.list[this.state.chosenOption][1].map(item => (
-                            <div className="item text popup" onClick={this.handleContentClick}>{item}</div>
-                        ))
+                        this.props.list[this.state.chosenOption][1].map(item => {
+                            
+                            if(this.props.page === "História Universal") {
+                                return (
+                                    <div className="item text popup" dangerouslySetInnerHTML={{"__html": item}}></div>
+                                )
+                            }
+
+                            return(
+                                <div className="item text popup" onClick={this.handleContentClick} dangerouslySetInnerHTML={{"__html": item}}></div>
+                            )
+                        })
                     }
                 </div>
 
