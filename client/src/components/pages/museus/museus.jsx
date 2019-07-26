@@ -14,7 +14,7 @@ class Museus extends Component {
         this.state = {
             title: "Museus.",
             text: ["Texto de experiência, mas, de forma sucinta, este é o lugar onde se lê sobre a imprensa globalizada"],
-            images: ["/img/top_photos/ExpoPermanente.jpg"],
+            images: ["/img/museus/cover.jpeg"],
             listOptions: [["A", "B", "À", "Á", "Â", "Ã", "Ä", "Å"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"], ["K", "L"], ["M", "N"], ["O", "P"], ["Q", "R"], ["S", "T"], ["U", "V"], ["W", "X"], ["Y", "Z"]],
             chosenLetter: "",
             popupInfo: {

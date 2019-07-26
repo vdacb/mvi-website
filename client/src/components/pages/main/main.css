@@ -24,7 +24,8 @@
 }
 
 #main-container #main-img-container #main-img {
-    height: 100%;
+    width: 120%;
+    height: 120%;
 }
 
 #main-container #info-container {

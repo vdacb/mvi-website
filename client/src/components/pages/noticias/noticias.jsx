@@ -15,7 +15,7 @@ class Noticias extends Component {
         this.state = {
             title: "Notícias",
             text: ["Aqui pode pesquisar e navegar pelo nosso arquivo de notícias, tudo relacionado com a imprensa."],
-            images: ["/img/top_photos/CIMG0386.JPG"],
+            images: ["/img/noticias/cover.jpg"],
             chosenNews: 0,
             fsPopupActive: false,
             scrollDistanceShowImage: 600,

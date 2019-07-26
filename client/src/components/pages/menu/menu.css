@@ -15,7 +15,7 @@
     width: 14rem;
     margin: 1.7rem auto;
     font-size: 1.7rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.9rem;
@@ -37,7 +37,6 @@
     font-family: "Texta";
     text-transform: uppercase;
     font-weight: 900;
-    color: white;
     cursor: pointer;
 }
 
@@ -46,6 +45,15 @@
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #171717;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-delay: 10ms;
+    /*transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);*/
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#menu-container #menu .menu-item a:hover {
+    color: #0f0f0f;
 }
 
 #menu-container .link-container {

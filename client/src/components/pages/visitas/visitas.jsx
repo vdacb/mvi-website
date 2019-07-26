@@ -11,9 +11,13 @@ class Visitas extends Component {
 
         this.state = {
             title: "Visitas.",
-            images: ["/img/top_photos/2005/MuseuInterior_pessoas.jpg"],
+            images: ["/img/visitas/cover.png"],
             text: ["Uma página interativa com vídeos sobre as diversas entidades por detrás da imprensa portuguesa."],
         }
+    }
+
+    componentDidMount() {
+        window.scrollTo(0,0);
     }
 
     render() {

@@ -11,11 +11,11 @@ class Datasheet extends Component {
             mainText: [
                 {
                     sectionName: "Autoria e direção do projeto",
-                    participants: ["Luís Humberto Marcos"],
+                    participants: ["Luíz Humberto Marcos"],
                 },
                 {
                     sectionName: "Pesquisa e textos",
-                    participants: ["Conceição Pratas", "José Miguel Neves", "Luís Humberto Marcos", "Susana Mota"],
+                    participants: ["Conceição Pratas", "José Miguel Neves", "Luíz Humberto Marcos", "Susana Mota"],
                 },
                 {
                     sectionName: "Coordenação",

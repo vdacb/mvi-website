@@ -16,43 +16,49 @@ class Main extends Component {
                     link: "alfabetos",
                     title: "Alfabetos",
                     description: "A Escrita, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
-                    image: "/img/typography/alfabetos.jpg",
+                    image: "/img/alfabetos/cover.png",
                 },
                 {
                     link: "equipamentos",
                     title: "Equipamentos",
                     description: "Os Equipamentos, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
-                    image: "/img/top_photos/prelolitografico.jpg",
+                    image: "/img/equipamentos/cover.jpeg",
                 },
                 {
                     link: "glossario",
                     title: "Glossário",
-                    description: "A Escrita, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
+                    description: "Um dicionário completo sobre todos os termos relacionados com a imprensa, desde máquinas processos e outros equipamentos.",
+                    image: "/img/top_photos/MNI_SalaRodrigoAlvares_ExpoPerm3.jpg",
                 },
                 {
                     link: "historiauniversal",
                     title: "História Universal",
-                    description: "Os Equipamentos, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações."
+                    description: "A Imprensa é uma arte antiga, cujas origens surgiram séculos atrás. Desde as primeiras frases impresas aos últimos livros, esta secção mostra os acontecimentos mais importantes da Imprensa ao longo da História.",
+                    image: "/img/top_photos/DSC_7456.jpg",
                 },
                 {
                     link: "museus",
                     title: "Museus",
-                    description: "A Escrita, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
+                    description: "Texto de experiência, mas, de forma sucinta, este é o lugar onde se lê sobre a imprensa globalizada.",
+                    image: "/img/museus/cover.jpeg",
                 },
                 {
                     link: "noticias",
                     title: "Notícias",
-                    description: "Os Equipamentos, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações."
+                    description: "Aqui pode pesquisar e navegar pelo nosso arquivo de notícias, tudo relacionado com a imprensa.",
+                    image: "/img/noticias/cover.jpg"
                 },
                 {
                     link: "personalidades",
                     title: "Personalidades",
-                    description: "A Escrita, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
+                    description: "A imprensa evoluiu ao longo dos séculos devido aos esforços, descobertas e invenções de várias figuras. Aqui nesta página estão, de forma ordenada, muitas destas figuras que perduraram ao longo dos séculos devido aos objetivos que atingiram.",
+                    image: "/img/top_photos/DSC_7399.jpg",
                 },
                 {
                     link: "visitas",
                     title: "Visitas",
-                    description: "Os Equipamentos, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações."
+                    description: "Uma página interativa com vídeos sobre as diversas entidades por detrás da imprensa portuguesa.",
+                    image: "/img/visitas/cover.JPG",
                 },
             ],
             selectedPage: 0,

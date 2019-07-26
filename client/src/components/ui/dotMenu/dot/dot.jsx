@@ -11,9 +11,8 @@ class Dot extends Component {
     }
 
     handleDotClick(ev) {
-        //this.props.dotClick.bind(null, this.props.index)
         this.props.dotClick(this.props.index);
-        this.dotRef.current.style.border = "1.5px solid #9590D7";
+        //this.dotRef.current.style.border = "1.5px solid #9590D7";
     }
 
     render() {
