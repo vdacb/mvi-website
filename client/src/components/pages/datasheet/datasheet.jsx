@@ -14,28 +14,20 @@ class Datasheet extends Component {
                     participants: ["Luíz Humberto Marcos"],
                 },
                 {
-                    sectionName: "Pesquisa e textos",
-                    participants: ["Conceição Pratas", "José Miguel Neves", "Luíz Humberto Marcos", "Susana Mota"],
-                },
-                {
-                    sectionName: "Coordenação",
-                    participants: ["Teresa Pereira Leite"],
-                },
-                {
-                    sectionName: "Supervisão técnica",
-                    participants: ["Jorge Almeida"],
+                    sectionName: "Fotografia",
+                    participants: ["Miguel Cunha", "Renato Sousa"],
                 },
                 {
                     sectionName: "Design",
-                    participants: ["João Raposo"],
-                },
-                {
-                    sectionName: "Música",
-                    participants: ["José Miguel Mesquita"],
+                    participants: ["Vasco Almeida"],
                 },
                 {
                     sectionName: "Programação",
-                    participants: ["Carlos Couto", "José Miguel Mesquita", "José Rolo", "Miguel Carvalho"],
+                    participants: ["Vasco Almeida"],
+                },
+                {
+                    sectionName: "Pesquisa e textos",
+                    participants: ["Conceição Pratas", "José Miguel Neves", "Luíz Humberto Marcos", "Susana Mota"],
                 },
                 {
                     sectionName: "VRML",
@@ -58,7 +50,7 @@ class Datasheet extends Component {
     render() {
         return(
             <div id="datasheet-container">
-            <img id="close-cross" src={window.location.origin + "/img/black_cross.png"} alt="close popup" onClick={this.goToLastPage}/>
+            <img id="close-cross" src={process.env.PUBLIC_URL + "/img/black_cross.png"} alt="close popup" onClick={this.goToLastPage}/>
                 <div className="title">{this.state.title}</div>
                 <div id="datasheet-content">
                     {

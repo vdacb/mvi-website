@@ -16,7 +16,7 @@ class Main extends Component {
                     link: "alfabetos",
                     title: "Alfabetos",
                     description: "A Escrita, como um sistema de signos que serve para exprimir graficamente a linguagem, constitui uma das grandes conquistas da Humanidade. Desde os primeiros signos conhecidos até chegar aos sistemas alfabéticos actualmente em uso, a escrita passou por inúmeras mudanças e transformações.",
-                    image: "/img/alfabetos/cover.png",
+                    image: "/img/alfabetos/cover.JPG",
                 },
                 {
                     link: "equipamentos",
@@ -40,7 +40,7 @@ class Main extends Component {
                     link: "museus",
                     title: "Museus",
                     description: "Texto de experiência, mas, de forma sucinta, este é o lugar onde se lê sobre a imprensa globalizada.",
-                    image: "/img/museus/cover.jpeg",
+                    image: "/img/museus/cover.png",
                 },
                 {
                     link: "noticias",
@@ -69,7 +69,7 @@ class Main extends Component {
 
     handlePageChange(newPageIndex) {
         console.log(newPageIndex);
-        
+
         this.setState({
             selectedPage: newPageIndex,
         });
@@ -85,7 +85,7 @@ class Main extends Component {
                     </div>
 
                     <div id="main-img-container">
-                        <img id="main-img" alt="Main" src={window.location.origin + this.state.pages[this.state.selectedPage].image}/>
+                        <img id="main-img" alt="Main" src={process.env.PUBLIC_URL + this.state.pages[this.state.selectedPage].image}/>
                     </div>
 
                     <div id="info-container">

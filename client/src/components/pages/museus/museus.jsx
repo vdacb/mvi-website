@@ -14,7 +14,7 @@ class Museus extends Component {
         this.state = {
             title: "Museus.",
             text: ["Texto de experiência, mas, de forma sucinta, este é o lugar onde se lê sobre a imprensa globalizada"],
-            images: ["/img/museus/cover.jpeg"],
+            images: ["/img/museus/cover.png"],
             listOptions: [["A", "B", "À", "Á", "Â", "Ã", "Ä", "Å"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"], ["K", "L"], ["M", "N"], ["O", "P"], ["Q", "R"], ["S", "T"], ["U", "V"], ["W", "X"], ["Y", "Z"]],
             chosenLetter: "",
             popupInfo: {
@@ -90,7 +90,7 @@ class Museus extends Component {
 
     handleScroll() {
         var parentElement = document.querySelector("#museus-warp").getBoundingClientRect();
-        
+
         if((parentElement.top > window.innerHeight/2) || (parentElement.bottom > window.innerHeight/2)) {
             this.setState({
                 verticalListClass: "visible",
@@ -114,7 +114,7 @@ class Museus extends Component {
         if(link[0] === "w") {
             link = "https://" + link;
         }
-        
+
         window.open(link, "_blank");
     }
 
@@ -132,14 +132,14 @@ class Museus extends Component {
                 <Header />
                 <ScrollBar />
                 <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} listOptions={this.state.listOptions} />
-                <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} /> 
+                <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} />
                 <div id="museus-warp">
                     {
                         this.state.museums.map((museum, index) => {
                             if(museum.img) {
                                 console.log()
                                 img = (
-                                    <img className="img" alt={museum.name} src={window.location.origin + "/img/museus/" + museum.img} />
+                                    <img className="img" alt={museum.name} src={process.env.PUBLIC_URL + "/img/museus/" + museum.img} />
                                 );
                             }
 

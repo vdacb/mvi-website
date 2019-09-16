@@ -36,7 +36,7 @@ class HeadlineImage extends Component {
                         <p className="text" dangerouslySetInnerHTML={{__html: this.props.text[2]}}></p>
                     </div>
                     <div>
-                        <img src={window.location.origin + this.props.image} alt="It shows whats said on the text" />
+                        <img src={process.env.PUBLIC_URL + this.props.image} alt="It shows whats said on the text" />
                     </div>
                 </div>
             </div>

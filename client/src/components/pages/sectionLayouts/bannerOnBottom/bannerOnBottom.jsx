@@ -11,7 +11,7 @@ class BannerOnBottom extends Component {
                 </div>
 
                 <div id="bn-banner-container">
-                    <img src={window.location.origin + "/img/top_photos/MNI_Fachadas_Panoramica_2012.jpg"} alt="bottom banner" />  
+                    <img src={process.env.PUBLIC_URL + "/img/top_photos/MNI_Fachadas_Panoramica_2012.jpg"} alt="bottom banner" />  
                 </div>
             </div>
         );

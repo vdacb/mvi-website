@@ -23,7 +23,7 @@ class About extends Component {
     render() {
         return(
             <div id="about-container">
-            <img id="close-cross" src={window.location.origin + "/img/black_cross.png"} alt="close popup" onClick={this.goToLastPage}/>
+            <img id="close-cross" src={process.env.PUBLIC_URL + "/img/black_cross.png"} alt="close popup" onClick={this.goToLastPage}/>
                 <div className="title">{this.state.title}</div>
                 <div id="about-content">
                     {

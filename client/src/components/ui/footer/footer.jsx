@@ -11,7 +11,7 @@ class Footer extends Component {
                     <div className="title">
                         <NavLink to={this.props.link}>{this.props.next}</NavLink>
                     </div>
-                    <img src={window.location.origin + "/img/arrow_long_white_right.png"} alt="Next arrow" />
+                    <img src={process.env.PUBLIC_URL + "/img/arrow_long_white_right.png"} alt="Next arrow" />
                 </div>
             </footer>
         )

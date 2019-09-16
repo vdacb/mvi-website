@@ -57,7 +57,7 @@ class Equipamentos extends Component {
 
         if(this.state.slidePopupActive) {
             console.log("POPUP", this.state.selectedPopupTitle)
-            popup = <SlidePopup title={this.state.popupContent.title} text={this.state.popupContent.text} image={window.location.origin + "/img/equipamentos/" + this.state.popupContent.img_fname} closePopup={this.openPopup} />
+            popup = <SlidePopup title={this.state.popupContent.title} text={this.state.popupContent.text} image={process.env.PUBLIC_URL + "/img/equipamentos/" + this.state.popupContent.img_fname} closePopup={this.openPopup} />
         }
 
         else {

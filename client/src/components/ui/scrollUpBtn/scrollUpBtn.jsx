@@ -10,7 +10,7 @@ class ScrollUpBtn extends Component {
     render() {
         return(
             <div id="scroll-up-btn" onClick={this.scrollToTop}>
-                <img src={window.location.origin + "/img/arrow_black_up.png"} alt="Arrow pointing upwards"/>
+                <img src={process.env.PUBLIC_URL + "/img/arrow_black_up.png"} alt="Arrow pointing upwards"/>
                 <div className="text">Voltar</div>
             </div>
         );

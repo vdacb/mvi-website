@@ -34,7 +34,7 @@ class ImageOnCenter extends Component {
                 </div>
 
                 <div id="img-container">
-                    <img src={window.location.origin + this.props.image} alt="Content"/>
+                    <img src={process.env.PUBLIC_URL + this.props.image} alt="Content"/>
                 </div>
 
                 <div id="italic-container">

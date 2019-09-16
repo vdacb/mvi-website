@@ -7,7 +7,7 @@ import "./landing.css";
 class Landing extends Component {
     constructor() {
         super();
-        
+
         this.state = {
             userScroll: false,
         }
@@ -40,9 +40,9 @@ class Landing extends Component {
                 <Header />
                 <div id="landing-container">
                     <div className="vertical-banner">
-                        <img src={window.location.origin + "/img/top_photos/2005/Maquina.jpg"} alt="welcome" />
+                        <img src={process.env.PUBLIC_URL + "/img/top_photos/2005/Maquina.jpg"} alt="welcome" />
                     </div>
-                    
+
                     <div className="content-container">
                         <div id="title">Museu virtual da imprensa</div>
                         <p className="text">Bem vindo ao Museu Virtual da Imprensa! Faça scroll para começar a explorar.</p>
@@ -53,7 +53,7 @@ class Landing extends Component {
                         <PopupLink link="ficha_tecnica" text="Ficha técnica" />
                     </div>
 
-                    <img className="arrow-flat-down" src={window.location.origin + "/img/arrow_flat_down.png"} alt="Scroll down arrow" onClick={this.handleUserScroll} />
+                    <img className="arrow-flat-down" src={process.env.PUBLIC_URL + "/img/arrow_flat_down.png"} alt="Scroll down arrow" onClick={this.handleUserScroll} />
                 </div>
             </React.Fragment>
         );

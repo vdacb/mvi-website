@@ -16,7 +16,7 @@ class FullScreenPopup extends Component {
                     <p className="text">{this.props.news.from}</p>
                     <div className="title">{this.props.news.title}</div>
                     <div className="seperation-bar"></div>
-                </div>  
+                </div>
             )
 
             text = this.props.news.text.split("\n");
@@ -31,9 +31,9 @@ class FullScreenPopup extends Component {
 
         return(
             <div id="fspopup-container">
-                <img id="close-btn" src={window.location.origin + "/img/black_cross.png"} onClick={this.props.closePopup} alt="close button"/>
+                <img id="close-btn" src={process.env.PUBLIC_URL + "/img/black_cross.png"} onClick={this.props.closePopup} alt="close button"/>
                 <div id="fspopup-content">
-                    {headline}    
+                    {headline}
                     <div id="p-container">
                         {
                             text.map((pg, index) => (
@@ -42,7 +42,7 @@ class FullScreenPopup extends Component {
                         }
                     </div>
                     <div id="main-img-container">
-                        <img src={window.location.origin + "/img/noticias/" + this.props.news.image} alt="news" />
+                        <img src={process.env.PUBLIC_URL + "/img/noticias/" + this.props.news.image} alt="news" />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import LandingSection from "./../sectionLayouts/landingSection/landingSection"; 
+import LandingSection from "./../sectionLayouts/landingSection/landingSection";
 import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
 import VerticalList from "./../../ui/verticalList/verticalList";
@@ -136,7 +136,7 @@ class Personalidades extends Component {
                 <Header />
                 <ScrollBar />
                 <VerticalList changeLetter={this.handleLetterChange} visibilityClass={this.state.verticalListClass} listOptions={this.state.listOptions} />
-                <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} /> 
+                <LandingSection title={this.state.title} text={this.state.text[0]} image={this.state.images[0]} />
                 <div id="personalities-container">
                     {
                         this.state.personalities.map((personality, index) => {
@@ -152,7 +152,7 @@ class Personalidades extends Component {
 
                             if(personality.image) {
                                 img = (
-                                    <img className="img" alt={personality.firstName + " " + personality.lastName} src={window.location.origin + "/img/personalidades/" + personality.image} />
+                                    <img className="img" alt={personality.firstName + " " + personality.lastName} src={process.env.PUBLIC_URL + "/img/personalidades/" + personality.image} />
                                 );
                             }
 

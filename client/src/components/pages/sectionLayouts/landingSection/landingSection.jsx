@@ -7,7 +7,7 @@ class LandingSection extends Component {
             <div id="landing-section-container">
                 <div id="landing-section-content">
                     <div id="image-container">
-                        <img src={window.location.origin + this.props.image} alt="welcome banner" />
+                        <img src={process.env.PUBLIC_URL + this.props.image} alt="welcome banner" />
                     </div>
 
                     <div id="landing-info">

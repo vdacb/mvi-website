@@ -14,7 +14,7 @@ import content from "./content.json";
 import "./alfabetos.css";
 
 class Alfabetos extends Component {
-    
+
     constructor() {
         super();
 
@@ -51,8 +51,7 @@ class Alfabetos extends Component {
         var popup;
 
         if(this.state.slidePopupActive) {
-            console.log("LOCATION", window.location.origin + "/img/alfabetos/" + this.state.popupContent.img_url);
-            popup = <SlidePopup title={this.state.popupContent.title} text={this.state.popupContent.text} image={window.location.origin + "/img/alfabetos/" + this.state.popupContent.img_fname} closePopup={this.openPopup} />
+            popup = <SlidePopup title={this.state.popupContent.title} text={this.state.popupContent.text} image={process.env.PUBLIC_URL + "/img/alfabetos/" + this.state.popupContent.img_fname} closePopup={this.openPopup} />
         }
 
         else {

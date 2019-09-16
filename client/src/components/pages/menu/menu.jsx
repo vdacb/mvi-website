@@ -49,7 +49,7 @@ class Menu extends Component {
     render() {
         return(
             <div id="menu-container">
-                <NavLink to="/landing">
+                <NavLink to="/">
                     <div id="home-link" className="title">Museu Virtual da Imprensa</div>
                 </NavLink>
 

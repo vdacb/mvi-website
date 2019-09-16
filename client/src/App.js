@@ -14,21 +14,25 @@ import Glossario from "./components/pages/glossario/glossario";
 import Visitas from "./components/pages/visitas/visitas";
 import './App.css';
 
-const App = () => (
-	<HashRouter>
-		<Route path="/landing" component={Landing} />
-		<Route path="/main" component={Main} />
-		<Route path="/about" component={About} />
-		<Route path="/ficha_tecnica" component={Datasheet} />
-		<Route path="/alfabetos" component={Alfabetos} />
-		<Route path="/equipamentos" component={Equipamentos} />
-        <Route path="/noticias" component={Noticias} />
-        <Route path="/personalidades" component={Personalidades} />
-		<Route path="/historia_universal" component={HistoriaUniversal} />
-		<Route path="/museus" component={Museus} />
-		<Route path="/glossario" component={Glossario} />
-		<Route path="/visitas" component={Visitas} />
-	</HashRouter>
-)
+const App = (props) => {
+	console.log("LOCATION", window.location.origin);
+	return(
+		<HashRouter>
+			<Route exact path="/" component={Landing} />
+			<Route path="/main" component={Main} />
+			<Route path="/about" component={About} />
+			<Route path="/ficha_tecnica" component={Datasheet} />
+			<Route path="/alfabetos" component={Alfabetos} />
+			<Route path="/equipamentos" component={Equipamentos} />
+			<Route path="/noticias" component={Noticias} />
+			<Route path="/personalidades" component={Personalidades} />
+			<Route path="/historia_universal" component={HistoriaUniversal} />
+			<Route path="/museus" component={Museus} />
+			<Route path="/glossario" component={Glossario} />
+			<Route path="/visitas" component={Visitas} />
+		</HashRouter>
+	)
+}
+
 
 export default App;

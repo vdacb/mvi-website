@@ -1,14 +1,14 @@
 import React, {Component} from "react";
-import LandingSection from "./../sectionLayouts/landingSection/landingSection"; 
+import LandingSection from "./../sectionLayouts/landingSection/landingSection";
 import Header from "./../../ui/header/header";
 import ScrollBar from "./../../ui/scrollBar/scrollBar";
 import FullScreenPopup from "./../../ui/fullScreenPopup/fullScreenPopup";
-import Footer from "./../../ui/footer/footer"; 
+import Footer from "./../../ui/footer/footer";
 import content from "./content.json";
 import "./noticias.css";
 
 class Noticias extends Component {
-    
+
     constructor(props) {
         super(props);
 
@@ -25,7 +25,7 @@ class Noticias extends Component {
                     title: "Museu da Imprensa assinala libertação de Auschwitz (71 anos) com livro de poemas e espetáculo teatral",
                     text: "O Museu Nacional da Imprensa assinala a comemoração do Aniversário da Libertação de Auschwitz a 27 de janeiro, iniciativa integrada na exposição de fotografia de David Araújo, “Auschwitz: Marca(s) de uma herança 71 anos depois. Há 70 anos, em 27 de janeiro de 1945, o Exército Vermelho libertou Auschwitz, o maior e mais terrível campo de extermínio nazi, em cujas câmaras de gás e crematórios foram mortas pelo menos um milhão de pessoas.\nO programa que comemora o 71.º da efeméride terá início às 16H00 com o lançamento do livro “Poemas de Shoá” da autora Ana Paula Eabrouk (Edições Esgotadas). Segue-se o espetáculo “Com as nossas mãos”, às 17H, encenado por Maíra Ribeiro e interpretado pelos alunos da Oficina de Teatro da Escola Secundária Carlos Amarante – OutrArte.",
                     image: "mni_auschwitz.jpg",
-                }, 
+                },
                 {
                     from: "Museu Nacional da Imprensa",
                     title: "Sinfonia Completa livro de conto de Manuela de Azevedo",
@@ -52,7 +52,7 @@ class Noticias extends Component {
         this.handleStickyImageOnScroll = this.handleStickyImageOnScroll.bind(this);
         this.toggleFSPopup = this.toggleFSPopup.bind(this);
         this.handleWindowResize = this.handleWindowResize.bind(this);
-    } 
+    }
 
     componentDidMount() {
         window.addEventListener("scroll", this.handleStickyImageOnScroll);
@@ -103,7 +103,7 @@ class Noticias extends Component {
             fsPopupActive: !this.state.fsPopupActive,
         });
     }
-    
+
     render() {
         var popup;
 
@@ -128,7 +128,7 @@ class Noticias extends Component {
                         ))
                     }
                     <div id="noticias-image-container" className={this.state.stickyImageClass} >
-                        <img src={window.location.origin + "/img/noticias/" + this.state.newsArr[this.state.chosenNews].image} alt="sticky"/>
+                        <img src={process.env.PUBLIC_URL + "/img/noticias/" + this.state.newsArr[this.state.chosenNews].image} alt="sticky"/>
                     </div>
                 </div>
                 <Footer link="/personalidades" next="Personalidades." />

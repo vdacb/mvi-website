@@ -8,14 +8,14 @@ class SlidePopup extends Component {
                 <div id="slide-popup-gray-area" onClick={this.props.closePopup}></div>
                 <div id="slide-popup">
                     <div id="slide-popup-cross-container">
-                        <img src={window.location.origin + "/img/black_cross.png"} onClick={this.props.closePopup} alt="Closing cross" />
+                        <img src={process.env.PUBLIC_URL + "/img/black_cross.png"} onClick={this.props.closePopup} alt="Closing cross" />
                     </div>
                         {
                             !this.props.image.includes("undefined") ? (
                                 <div id="slide-popup-img-container">
                                     <img src={this.props.image} alt="banner" />
                                 </div>
-                                ) 
+                                )
                             : null
                         }
                     <div className="title">{this.props.title}</div>

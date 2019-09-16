@@ -20,7 +20,7 @@ class MenuIcon extends Component {
         }
 
         return(
-            <img id="menu-icon" src={window.location.origin + "/img/" + displayedImage} alt="menu icon" />
+            <img id="menu-icon" src={process.env.PUBLIC_URL + "/img/" + displayedImage} alt="menu icon" />
         );
     }
 }
